@@ -1,0 +1,21 @@
+.heroSection__container {
+  padding-left: 10vw;
+  padding-top: 35vh;
+  width: fit-content;
+}
+
+.heroSection__contentTitle {
+  font-size: 6rem;
+  font-weight: 300;
+}
+
+.heroSection__contentSubtitle {
+  font-size: 4.3rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.heroSection__contentParagraph {
+  font-size: 2rem;
+  font-weight: 300;
+}

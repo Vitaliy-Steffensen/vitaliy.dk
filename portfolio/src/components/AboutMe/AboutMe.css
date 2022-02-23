@@ -1,0 +1,7 @@
+.AboutMe {
+  display: flex;
+}
+
+.AboutMe__content {
+  margin-top: 150px;
+}

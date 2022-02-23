@@ -1,25 +1,31 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./GreetingsPopup.css";
-import { motion } from "framer-motion";
 
-function GreetingsPopup({ setVisible }) {
-  const onComplete = () => setVisible(false);
+function GreetingsPopup() {
+  const [disapearanimation, setDisapearanimation] = useState(false);
+  const [isVisible, setVisible] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setDisapearanimation(true);
+    }, 1000);
+    setTimeout(() => {
+      setVisible(false);
+    }, 2000);
+  }, []);
 
   return (
-    <motion.div
-      initial={{ x: 0, y: 0 }}
-      animate={{ x: 0, y: "-100vh" }}
-      exit={{ x: 0, y: "-100vh" }}
-      transition={{
-        duration: 1,
-        delay: 1,
-      }}
-      onAnimationComplete={onComplete}
-    >
-      <div className="greetingsPopup">
-        <span className="greetingsPopup__title">HELLO</span>
-      </div>
-    </motion.div>
+    <>
+      {isVisible && (
+        <div
+          className={`greetingsPopup ${
+            disapearanimation && "greetingsPopup--disapear"
+          }`}
+        >
+          <span className="greetingsPopup__title">HELLO</span>
+        </div>
+      )}
+    </>
   );
 }
 

@@ -1,51 +1,36 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import AboutMe from "./components/AboutMe";
 import GreetingsPopup from "./components/GreetingsPopup";
-
-import { AnimatePresence } from "framer-motion";
+import HeroSection from "./components/HeroSection";
+import NavMenu from "./components/NavMenu";
 
 function App() {
-  //const location = useLocation();
-
-  const [isVisible, setVisible] = useState(true);
-
   return (
     <div>
-      <AnimatePresence>
-        {isVisible && <GreetingsPopup setVisible={setVisible} />}
-        <h1>fds</h1>
-        <div>fds</div>
-        <div>fds</div>
-        <div>fds</div>
-        <div>fds</div>
-        <h1>fds</h1>
-        <div>fds</div>
-        <div>fds</div>
-        <div>fds</div>
-        <div>fds</div>
-        <div>fds</div>
-        <div>fds</div>
-      </AnimatePresence>
+      <GreetingsPopup />
+      <NavMenu />
+      <HeroSection />
+
+      <AboutMe />
+      <h1>fdsf</h1>
+      <h1>fdsf</h1>
+      <h1>fdsf</h1>
+      <h1>fdsf</h1>
+      <h1>fdsf</h1>
+      <a href="#introduction">hej</a>
+      <h1>fdsf</h1>
+      <h1>fdsf</h1>
+      <h1>fdsf</h1>
+      <h1>fdsf</h1>
+      <h1>fdsf</h1>
+      <h1>fdsf</h1>
+      <h1>fdsf</h1>
+      <h1>fdsf</h1>
+      <h1>fdsf</h1>
+      <h1>fdsf</h1>
+      <h1>fdsf</h1>
     </div>
   );
 }
 
 export default App;
-
-// return (
-//   <div className="app">
-//     <div>fds</div>
-//     {/* <AnimatePresence> */}
-//     <Router>
-//       <div>fds</div>
-//       <Routes location={location} key={location.pathname}>
-//         <Route path="/introduction">
-//           <span>fds</span>
-//         </Route>
-//         <Route path="/">
-//           <div>fds</div>
-//         </Route>
-//       </Routes>
-//     </Router>
-//     {/* <AnimatePresence> */}
-//   </div>
-// );
