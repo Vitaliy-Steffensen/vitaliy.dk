@@ -1,7 +1,19 @@
 .AboutMe {
-  display: flex;
+  margin-top: 50px;
 }
 
-.AboutMe__content {
-  margin-top: 150px;
+.AboutMe__paragraph {
+  width: 73%;
+  max-width: 1410px;
+  margin: 70px 100px;
+  font-size: 2rem;
+  color: #4b4b4b;
+  font-family: "SF Display";
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 1024px) {
+  .AboutMe__paragraph {
+    font-size: 1.5rem;
+  }
 }

@@ -14,10 +14,23 @@ export const HeroContentContainer = styled.h2`
   text-align: center;
   z-index: 10;
   position: absolute;
-  top: ${() => {
-    const scrollPosition = useScrollPosition();
-    return scrollPosition > 0 && scrollPosition < window.innerHeight
-      ? `${40 * (1 - scrollPosition / window.innerHeight)}vh`
-      : "40vh";
-  }};
+
+  @media (min-width: 768px) {
+    top: ${() => {
+      const scrollPosition = useScrollPosition();
+      return scrollPosition > 0 && scrollPosition < window.innerHeight
+        ? `${40 * (1 - scrollPosition / window.innerHeight)}vh`
+        : "40vh";
+    }};
+  }
+
+  @media (max-width: 767px) {
+    width: 100vw;
+    top: ${() => {
+      const scrollPosition = useScrollPosition();
+      return scrollPosition > 0 && scrollPosition < window.innerHeight
+        ? `${45 * (1 - scrollPosition / window.innerHeight)}vh`
+        : "45vh";
+    }};
+  }
 `;

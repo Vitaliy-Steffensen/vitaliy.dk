@@ -2,15 +2,16 @@ import { useEffect, useState } from "react";
 import { useScrollPosition } from "./useScrollPosition";
 
 /**
- * `useLocalScrollFraction` takes a (`ref object`) as the passed argument.
- * And returns a fragment value telling how far you've scrolled The ref object.
+ * `useLocalScrollPosition` takes a (`ref object`) as the passed argument.
+ * And returns a px value telling how far you've scrolled The ref object.
  *
- * 0 meaning you havent reached the elemnts vertical spand and 1 meaning the entire element has passed the screen.
+ * 0 means you either have passed the component or it isnt in the view
+ * Anything else than 0 is the amount of pixels you've scrolled the components visibility span.
  *
  * @see https://github.com/Vitaliy-Steffensen
  */
-export const useLocalScrollFraction = (componentRef) => {
-  const [localScrollFraction, setLocalScrollFraction] = useState(0);
+export const useLocalScrollPosition = (componentRef) => {
+  const [localScrollPosition, setLocalScrollPosition] = useState(0);
   const scrollPosition = useScrollPosition();
 
   useEffect(() => {
@@ -25,20 +26,17 @@ export const useLocalScrollFraction = (componentRef) => {
       const minView = scrollPosition;
       const elementEndsAt = offsetTop + offsetHeight;
 
-      if (minView > elementEndsAt) return 1;
+      if (minView > elementEndsAt) return 0;
 
       const elementVisibilityReachBeginsAt =
         elementStartAt - window.innerHeight;
 
-      return (
-        (scrollPosition - elementVisibilityReachBeginsAt) /
-        (elementEndsAt - elementVisibilityReachBeginsAt)
-      );
+      return scrollPosition - elementVisibilityReachBeginsAt;
     };
 
-    componentRef && setLocalScrollFraction(fraction);
+    componentRef && setLocalScrollPosition(fraction);
     return (componentRef = null);
   }, [scrollPosition]);
 
-  return localScrollFraction;
+  return localScrollPosition;
 };

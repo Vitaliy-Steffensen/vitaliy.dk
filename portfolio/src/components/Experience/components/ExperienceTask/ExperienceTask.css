@@ -1,0 +1,40 @@
+.experienceTask__imageContainer {
+  max-height: 550px;
+  margin: 30px auto;
+}
+
+.experienceTask__image {
+  object-fit: contain;
+  display: block;
+  max-width: 95%;
+  margin: auto;
+  height: 90%;
+  transition: height 0.2s ease-in-out;
+}
+
+.experienceTask__image:hover {
+  height: 100%;
+}
+
+.experienceTask__descriptionContainer {
+  width: 100%;
+  max-width: 950px;
+  color: #242424;
+  margin: 30px auto;
+}
+
+.experienceTask__title {
+  font-size: 2.6rem;
+  font-weight: 500;
+}
+
+.experienceTask--textRight {
+  text-align-last: right;
+}
+
+.experienceTask__description {
+  text-align: justify;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-top: 20px;
+}

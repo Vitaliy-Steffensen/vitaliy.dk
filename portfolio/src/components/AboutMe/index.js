@@ -1,14 +1,18 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import "./AboutMe.css";
-import { Timeline } from "./components/Timeline.style";
+import TimelinePage from "../Templates/TimelinePage";
 
 export default function AboutMe() {
-  const componentRef = useRef();
-
   return (
-    <div className="AboutMe" ref={componentRef}>
-      <Timeline />
-      <div className="AboutMe__content">fddsss</div>
+    <div className="AboutMe">
+      <TimelinePage title="About me" link="about" contentMargin={220}>
+        <p className="AboutMe__paragraph">
+          {"<! --- As a dedicated developer, I've built anything from video " +
+            "games to computer software. Now my passion lies in website " +
+            "development. I have been programming longer than I can remember " +
+            "and have always admired the startup and scale-up industry. --->"}
+        </p>
+      </TimelinePage>
     </div>
   );
 }

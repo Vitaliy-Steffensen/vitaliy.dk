@@ -6,14 +6,14 @@ import "./HeroSection.css";
 
 export default function HeroSection() {
   return (
-    <HeroBagground id="introduction">
+    <HeroBagground id="intro">
       <div className="heroSection__container">
         <HeroTitle>I am</HeroTitle>
         <HeroContentContainer>
           <h1 className="heroSection__contentTitle">Vitaliy Steffensen</h1>
           <h3 className="heroSection__contentSubtitle">Front-end developer</h3>
           <span className="heroSection__contentParagraph">
-            with design & backend experience
+            with design & back-end experience
           </span>
         </HeroContentContainer>
       </div>

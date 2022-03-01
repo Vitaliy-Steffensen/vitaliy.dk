@@ -19,3 +19,21 @@
   font-size: 2rem;
   font-weight: 300;
 }
+
+@media (max-width: 767px) {
+  .heroSection__container {
+    padding-left: 0vw;
+  }
+
+  .heroSection__contentTitle {
+    font-size: 3rem;
+  }
+
+  .heroSection__contentSubtitle {
+    font-size: 2.2rem;
+  }
+
+  .heroSection__contentParagraph {
+    font-size: 1.2rem;
+  }
+}

@@ -1,8 +1,11 @@
 import React from "react";
 import AboutMe from "./components/AboutMe";
+import Contact from "./components/Contact";
+import Experience from "./components/Experience";
 import GreetingsPopup from "./components/GreetingsPopup";
 import HeroSection from "./components/HeroSection";
 import NavMenu from "./components/NavMenu";
+import RecentProject from "./components/RecentProject";
 
 function App() {
   return (
@@ -10,25 +13,10 @@ function App() {
       <GreetingsPopup />
       <NavMenu />
       <HeroSection />
-
       <AboutMe />
-      <h1>fdsf</h1>
-      <h1>fdsf</h1>
-      <h1>fdsf</h1>
-      <h1>fdsf</h1>
-      <h1>fdsf</h1>
-      <a href="#introduction">hej</a>
-      <h1>fdsf</h1>
-      <h1>fdsf</h1>
-      <h1>fdsf</h1>
-      <h1>fdsf</h1>
-      <h1>fdsf</h1>
-      <h1>fdsf</h1>
-      <h1>fdsf</h1>
-      <h1>fdsf</h1>
-      <h1>fdsf</h1>
-      <h1>fdsf</h1>
-      <h1>fdsf</h1>
+      <Experience />
+      <RecentProject />
+      <Contact />
     </div>
   );
 }
