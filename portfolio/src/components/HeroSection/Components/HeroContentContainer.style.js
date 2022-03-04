@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { useScrollPosition } from "../../../Hooks/useScrollPosition";
 
-export const HeroContentContainer = styled.h2`
+export const HeroContentContainer = styled.div`
   background: linear-gradient(
     0.45turn,
     #e5e3e600,

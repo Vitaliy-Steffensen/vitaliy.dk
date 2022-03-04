@@ -9,8 +9,8 @@ export default function Experience() {
   return (
     <TimelinePage title="experience" link="experience" contentMargin={200}>
       <div className="experience">
-        {experiences?.map((job) => (
-          <>
+        {experiences?.map((job, i) => (
+          <React.Fragment key={i}>
             <ExperienceTitle
               img={job.img}
               title={job.title}
@@ -23,9 +23,10 @@ export default function Experience() {
                 title={task.title}
                 description={task.description}
                 left={Math.abs(i) % 2 === 1}
+                key={i}
               />
             ))}
-          </>
+          </React.Fragment>
         ))}
       </div>
     </TimelinePage>

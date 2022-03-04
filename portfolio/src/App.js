@@ -5,7 +5,7 @@ import Experience from "./components/Experience";
 import GreetingsPopup from "./components/GreetingsPopup";
 import HeroSection from "./components/HeroSection";
 import NavMenu from "./components/NavMenu";
-import RecentProject from "./components/RecentProject";
+import RecentProjects from "./components/RecentProjects";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
       <HeroSection />
       <AboutMe />
       <Experience />
-      <RecentProject />
+      <RecentProjects />
       <Contact />
     </div>
   );

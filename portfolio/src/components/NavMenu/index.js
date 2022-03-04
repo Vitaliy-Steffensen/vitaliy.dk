@@ -3,6 +3,7 @@ import "./NavMenu.css";
 import { NavItems } from "./NavItems";
 import arrowRight from "../../assets/Images/Icons/arrowRight.png";
 import arrowLeft from "../../assets/Images/Icons/arrowLeft.png";
+import { LinkedinOutlined, GithubOutlined } from "@ant-design/icons";
 
 export default function NavMenu() {
   const [open, setOpen] = useState(false);
@@ -18,15 +19,12 @@ export default function NavMenu() {
         src={open ? arrowRight : arrowLeft}
         alt=""
       />
+
       <div className={`navMenu__content ${open || "navMenu--closeContent"}`}>
-        {NavItems?.map((item) => (
-          <a className="navMenu__option" href={item.link}>
+        {NavItems?.map((item, i) => (
+          <a className="from-right navMenu__option" href={item.link} key={i}>
             {item?.icon ? (
-              <img
-                className="navMenu__optionImage onHover--pointer"
-                src={item?.icon}
-                alt=""
-              />
+              <div className="navMenu__optionImage">{item?.icon}</div>
             ) : (
               <span className="navMenu__optionText onHover--pointer">
                 {item.name}

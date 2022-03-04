@@ -1,5 +1,4 @@
-import linkedinIcon from "../../assets/Images/Icons/linkedinWhite.png";
-import gitIcon from "../../assets/Images/Icons/gitWhite.png";
+import { LinkedinOutlined, GithubOutlined } from "@ant-design/icons";
 
 export const NavItems = [
   {
@@ -30,11 +29,11 @@ export const NavItems = [
   {
     name: "LinkedIn",
     link: "https://www.linkedin.com/in/vitaliy-steffensen-04b4b71b1/",
-    icon: linkedinIcon,
+    icon: <LinkedinOutlined />,
   },
   {
     name: "Git",
     link: "https://github.com/Vitaliy-Steffensen",
-    icon: gitIcon,
+    icon: <GithubOutlined />,
   },
 ];
