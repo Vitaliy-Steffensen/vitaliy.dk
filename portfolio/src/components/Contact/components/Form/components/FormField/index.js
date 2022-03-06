@@ -6,7 +6,7 @@ import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
 import draftToHtml from "draftjs-to-html";
 
 export default function FormField({ field, value, handleValueChange, error }) {
-  const { name, required, textEditor } = field;
+  const { name, textEditor } = field;
 
   const handleEditorChange = (editorState) => {
     const editorContent = editorState.getCurrentContent();
@@ -23,28 +23,29 @@ export default function FormField({ field, value, handleValueChange, error }) {
   };
 
   return (
-    <div className="form-group">
-      <label htmlFor={name}>
-        {name}
-        {required && " *"}
-      </label>
+    <div className="form-field">
       {textEditor ? (
         <Editor
-          wrapperClassName="textBox"
-          editorClassName="editor-class"
+          wrapperClassName={`form-field__text-editor ${
+            error && "form-field__input--error"
+          }`}
+          editorClassName="form-field__text-editor-content"
           toolbarClassName="toolbar-class"
           onEditorStateChange={handleEditorChange}
+          placeholder={name}
         />
       ) : (
         <input
+          className={`form-field__input ${error && "form-field__input--error"}`}
           type={name}
           name={name}
           id={name}
           onChange={handleValueChange}
           value={value}
+          placeholder={name}
         />
       )}
-      {error && <p>{error}</p>}
+      {error && <p className="form-field__error">{error}</p>}
     </div>
   );
 }

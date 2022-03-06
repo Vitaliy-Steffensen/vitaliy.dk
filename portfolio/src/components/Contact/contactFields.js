@@ -10,8 +10,8 @@ export const fields = {
         return;
       },
     },
-    { name: "username" },
-    { name: "password" },
+    { name: "name" },
+    { name: "organisation" },
   ],
   2: [
     {

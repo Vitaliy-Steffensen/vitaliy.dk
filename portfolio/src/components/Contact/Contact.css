@@ -1,16 +1,14 @@
+.contact {
+  margin-top: 100px;
+}
+
 .multi-step-form {
   overflow: hidden;
   position: relative;
-  height: 900px;
+  height: 850px;
   width: 100%;
 }
-/*.multi-step-form {
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 900px;
-  width: 300%;
-  margin-left: -100%;
+
+.contact__source-container {
+  margin: 250px auto -150px;
 }
-*/

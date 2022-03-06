@@ -13,7 +13,7 @@ export const experiences = [
     img: ZolyLogo,
     title: "CEO & Lead Developer",
     fromDate: "Septemper 2020",
-    toDate: "Feburary 2021",
+    toDate: "March 2021",
     tasks: [
       {
         img: ZolyWebsite,

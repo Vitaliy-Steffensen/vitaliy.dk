@@ -4,7 +4,8 @@
   cursor: url(assets/Images/cursers/auto.png), auto;
 }
 
-.onHover--pointer {
+.onHover--pointer,
+.onHover--pointer * {
   margin: 0px;
   cursor: url(assets/Images/cursers/pointer.png), pointer;
 }
@@ -13,6 +14,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Avenir", "SF Display";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #242424;
 }
 
 code {

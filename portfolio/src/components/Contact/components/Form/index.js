@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { capitalizeFirstLetter } from "../../../../helpers/constants";
+import InternalButton from "../../../elements/InternalButton";
 import FormField from "./components/FormField";
 import "./Form.css";
 
@@ -54,7 +55,7 @@ export default function Form({
 
   return (
     <div
-      className={`card ${selectedStep === stepNumber ? "active" : "hide"}`}
+      className={`form-card ${selectedStep === stepNumber ? "active" : "hide"}`}
       data-step={stepNumber}
     >
       <h3 className="step-title">{stepTitle}</h3>
@@ -67,14 +68,24 @@ export default function Form({
           key={i}
         />
       ))}
-      {hasPrevious && (
-        <button type="button" onClick={gotoPreviousStep}>
-          Previous
-        </button>
-      )}
-      <button type="button" onClick={gotoNextStep}>
-        {isSubmit ? "Submit" : "Next"}
-      </button>
+      <div className="multi-step-form__buttons-container">
+        {hasPrevious && (
+          <InternalButton
+            className="multi-step-form__button"
+            type="button"
+            onClick={gotoPreviousStep}
+          >
+            Previous
+          </InternalButton>
+        )}
+        <InternalButton
+          className="multi-step-form__button"
+          type="button"
+          onClick={gotoNextStep}
+        >
+          {isSubmit ? "Submit" : "Next"}
+        </InternalButton>
+      </div>
     </div>
   );
 }

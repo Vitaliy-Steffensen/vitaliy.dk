@@ -6,6 +6,7 @@ import GreetingsPopup from "./components/GreetingsPopup";
 import HeroSection from "./components/HeroSection";
 import NavMenu from "./components/NavMenu";
 import RecentProjects from "./components/RecentProjects";
+import Skills from "./components/Skills";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <AboutMe />
       <Experience />
       <RecentProjects />
+      <Skills />
       <Contact />
     </div>
   );

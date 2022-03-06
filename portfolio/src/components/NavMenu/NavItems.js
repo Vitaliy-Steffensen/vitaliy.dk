@@ -22,6 +22,11 @@ export const NavItems = [
     icon: null,
   },
   {
+    name: "Texststack & Skills",
+    link: "#skills",
+    icon: null,
+  },
+  {
     name: "Contact",
     link: "#contact",
     icon: null,
