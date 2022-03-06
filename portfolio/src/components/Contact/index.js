@@ -6,9 +6,20 @@ import { fields } from "./contactFields";
 import MultiStepFormProgressBar from "./components/Form/MultiStepFormProgressBar";
 import { GithubOutlined } from "@ant-design/icons";
 import ExternalButton from "../elements/ExternalButton";
+import emailjs from "emailjs-com";
+import { Spin } from "antd";
+import { LoadingOutlined, CheckCircleOutlined } from "@ant-design/icons";
 
 export default function Contact() {
   const [selectedStep, setSelectedStep] = useState(1);
+  const [emailData, setEmailData] = useState({
+    email: "",
+    name: "",
+    organisation: "",
+    subject: "",
+    message: "",
+  });
+  const [sendingEmail, setSendingEmail] = useState(false);
 
   useEffect(() => {
     const formSteps = [...document.querySelectorAll("[data-step]")];
@@ -28,7 +39,28 @@ export default function Contact() {
   }
 
   useEffect(() => {
-    selectedStep === 3 && console.log("set loading & send email");
+    if (selectedStep === 3) {
+      setSendingEmail(true);
+
+      emailjs
+        .send(
+          "gmail",
+          "portfolio_template",
+          emailData,
+          process.env.REACT_APP_EMAILJS_USER_ID
+        )
+        .then(
+          () => {
+            setSendingEmail(false);
+          },
+          (error) => {
+            alert(
+              "Email failed to deliver. You can send an email manualy to: vitaliysteffensen@gmail.com"
+            );
+            console.warn("Email error:", error);
+          }
+        );
+    }
   }, [selectedStep]);
 
   return (
@@ -45,6 +77,7 @@ export default function Contact() {
             stepTitle="YOUR INFO"
             selectedStep={selectedStep}
             setSelectedStep={setSelectedStep}
+            setEmailData={setEmailData}
             fields={fields[1]}
           />
           <Form
@@ -53,6 +86,7 @@ export default function Contact() {
             selectedStep={selectedStep}
             setSelectedStep={setSelectedStep}
             fields={fields[2]}
+            setEmailData={setEmailData}
             hasPrevious
             isSubmit
           />
@@ -60,7 +94,24 @@ export default function Contact() {
             className={`form-card ${selectedStep === 3 ? "active" : "hide"}`}
             data-step="3"
           >
-            <h3 className="step-title">CONFIRMATION</h3>
+            {sendingEmail ? (
+              <>
+                <h3 className="step-title">Sending...</h3>
+                <Spin
+                  indicator={
+                    <LoadingOutlined
+                      className="contact__confirmation-icon"
+                      spin
+                    />
+                  }
+                />
+              </>
+            ) : (
+              <>
+                <h3 className="step-title">Your email has been sent</h3>
+                <CheckCircleOutlined className="contact__confirmation-icon" />
+              </>
+            )}
           </div>
         </form>
 

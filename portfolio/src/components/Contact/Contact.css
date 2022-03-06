@@ -12,3 +12,10 @@
 .contact__source-container {
   margin: 250px auto -150px;
 }
+
+.contact__confirmation-icon {
+  margin: 50px auto 40px;
+  font-size: 40px;
+  color: #de4721;
+  display: block;
+}

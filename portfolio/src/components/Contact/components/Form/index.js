@@ -10,6 +10,7 @@ export default function Form({
   fields,
   selectedStep,
   setSelectedStep,
+  setEmailData,
   hasPrevious,
   isSubmit,
 }) {
@@ -49,8 +50,15 @@ export default function Form({
     const errors = getFormErrors(formValues);
     setFormErrors(errors);
 
-    if (Object.keys(errors).length === 0)
+    if (Object.keys(errors).length === 0) {
       setSelectedStep((prevState) => prevState + 1);
+      setEmailData((prevState) => {
+        return {
+          ...prevState,
+          ...formValues,
+        };
+      });
+    }
   };
 
   return (
