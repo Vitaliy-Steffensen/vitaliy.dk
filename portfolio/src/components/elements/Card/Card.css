@@ -1,0 +1,16 @@
+.card {
+  padding: 30px;
+  border: none;
+  border-radius: 0.5rem;
+
+  box-shadow: 2px 2px 20px #6e6e6e;
+  margin: 20px;
+}
+
+.card__title {
+  font-family: "SF Display";
+  font-weight: normal;
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
