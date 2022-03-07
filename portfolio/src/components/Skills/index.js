@@ -9,10 +9,12 @@ export default function Skills() {
     <TimelinePage title="Textsack & skills" link="skills" contentMargin={200}>
       <div className="skills__container">
         <div className="skills__card-grid">
-          {skills.map((skill) => (
-            <Card title={skill.area}>
-              {skill.skills.map((record) => (
-                <p className="skill__property">{record}</p>
+          {skills.map((skill, skillIndex) => (
+            <Card key={skillIndex} title={skill.area} titleUnderline>
+              {skill.skills.map((record, recordIndex) => (
+                <p key={recordIndex} className="skill__property">
+                  {record}
+                </p>
               ))}
             </Card>
           ))}

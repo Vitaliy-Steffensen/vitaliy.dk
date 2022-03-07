@@ -1,18 +1,28 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./AboutMe.css";
 import TimelinePage from "../Templates/TimelinePage";
+import { useLocalScrollFraction } from "../../Hooks/useLocalScrollFraction";
+import TypeWriter from "../elements/TypeWriter";
 
 export default function AboutMe() {
+  const textRef = useRef();
+  const localScrollFraction = useLocalScrollFraction(textRef);
+
+  const texts = [
+    "As a developer",
+    "As a dedicated developer, I've built anything from video " +
+      "games to computer software. Now my passion lies in website " +
+      "development. I have been programming longer than I can remember " +
+      "and have always admired the startup and scale-up industry.",
+  ];
+
   return (
-    <div className="AboutMe">
-      <TimelinePage title="About me" link="about" contentMargin={220}>
-        <p className="AboutMe__paragraph">
-          {"<! --- As a dedicated developer, I've built anything from video " +
-            "games to computer software. Now my passion lies in website " +
-            "development. I have been programming longer than I can remember " +
-            "and have always admired the startup and scale-up industry. --->"}
-        </p>
-      </TimelinePage>
-    </div>
+    <TimelinePage title="About me" link="about" contentMargin={220}>
+      <p className="AboutMe__container" ref={textRef}>
+        {localScrollFraction > 0.05 && (
+          <TypeWriter className="AboutMe__paragraph" texts={texts} />
+        )}
+      </p>
+    </TimelinePage>
   );
 }

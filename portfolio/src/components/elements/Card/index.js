@@ -1,10 +1,18 @@
 import React from "react";
 import "./Card.css";
 
-export default function Card({ children, title }) {
+export default function Card({ children, title, titleUnderline }) {
   return (
     <div className="card">
-      <p className="card__title">{title}</p>
+      {title && (
+        <p
+          className={`card__title ${
+            titleUnderline && "card__title--underline"
+          }`}
+        >
+          {title}
+        </p>
+      )}
       {children}
     </div>
   );

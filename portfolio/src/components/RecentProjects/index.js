@@ -15,6 +15,7 @@ export default function RecentProjects() {
       <div className="project-cards-grid">
         {projects.map((project, i) => (
           <ProjectCard
+            key={i}
             number={(i += 1)}
             title={project.title}
             demoLink={project.demoLink}

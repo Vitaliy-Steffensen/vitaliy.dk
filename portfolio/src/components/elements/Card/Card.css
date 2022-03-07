@@ -14,3 +14,9 @@
   text-align: center;
   margin-bottom: 40px;
 }
+
+.card__title--underline {
+  text-decoration: underline;
+  text-decoration-color: #de4721;
+  text-underline-offset: 2px;
+}

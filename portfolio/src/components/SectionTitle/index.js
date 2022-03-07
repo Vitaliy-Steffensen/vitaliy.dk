@@ -11,21 +11,14 @@ export default function SectionTitle({ id, children }) {
 
   useEffect(() => {
     visible
-      ? titleScrollFraction <= 0.2 && setVisible(false)
-      : titleScrollFraction > 0.2 && setVisible(true);
+      ? titleScrollFraction <= 0.1 && setVisible(false)
+      : titleScrollFraction > 0.1 && setVisible(true);
   }, [titleScrollFraction]);
 
   return (
-    <TitleContainer
-      id={id}
-      ref={titleRef}
-      localScrollFraction={titleScrollFraction}
-      visible={visible}
-    >
+    <TitleContainer id={id} ref={titleRef} visible={visible}>
       <TitleDecoration />
-      <Title localScrollFraction={titleScrollFraction} visible={visible}>
-        {children}
-      </Title>
+      <Title visible={visible}>{children}</Title>
     </TitleContainer>
   );
 }

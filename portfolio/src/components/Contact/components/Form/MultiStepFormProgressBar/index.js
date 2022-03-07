@@ -5,7 +5,7 @@ const MultiStepFormProgressBar = ({ steps, selectedStep }) => {
   return (
     <div className="progress-bar">
       {steps.map((step, i) => (
-        <>
+        <React.Fragment key={i}>
           <div className="progress-bar__step-container">
             <span
               className={`progress-bar__step-number ${
@@ -25,7 +25,7 @@ const MultiStepFormProgressBar = ({ steps, selectedStep }) => {
               <line x1="0" y1="0" x2="100%" y2="0" />
             </svg>
           )}
-        </>
+        </React.Fragment>
       ))}
     </div>
   );
