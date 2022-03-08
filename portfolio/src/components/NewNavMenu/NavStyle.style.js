@@ -27,7 +27,7 @@ export const NavStyle = styled.div`
   }
 
   .sidebar {
-    z-index: 10;
+    z-index: 500;
     height: 100vh;
     width: 230px;
     background: #fff;
