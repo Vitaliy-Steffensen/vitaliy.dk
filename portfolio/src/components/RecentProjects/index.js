@@ -7,11 +7,7 @@ import ProjectCard from "./components/ProjectCard";
 
 export default function RecentProjects() {
   return (
-    <TimelinePage
-      title="Most recent projects"
-      link="recent-project"
-      contentMargin={200}
-    >
+    <TimelinePage title="Most recent project" link="recent-project">
       <div className="project-cards-grid">
         {projects.map((project, i) => (
           <ProjectCard

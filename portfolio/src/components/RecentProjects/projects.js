@@ -4,9 +4,4 @@ export const projects = [
     demoLink: "",
     projectLink: "",
   },
-  {
-    title: "Typing Site(wip)",
-    demoLink: "",
-    projectLink: "",
-  },
 ];

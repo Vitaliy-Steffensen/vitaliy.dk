@@ -1,7 +1,7 @@
 .experienceTitle__containerLeft {
   display: flex;
   align-items: center;
-  margin-bottom: 150px;
+  margin-bottom: 120px;
   margin-top: 200px;
 }
 
@@ -16,7 +16,7 @@
 }
 
 .experienceTitle__image {
-  max-height: 190px;
+  max-height: 170px;
 }
 
 .experienceTitle__containerRight {
@@ -37,6 +37,9 @@
   font-size: 2.6rem;
   font-weight: 500;
   margin-bottom: 15px;
+  text-decoration: underline 3px;
+  text-decoration-color: #de4721;
+  text-underline-offset: 3px;
 }
 
 .experienceTitle__subTitble {

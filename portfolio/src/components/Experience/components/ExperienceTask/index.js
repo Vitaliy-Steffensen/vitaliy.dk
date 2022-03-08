@@ -1,31 +1,57 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./ExperienceTask.css";
 
-export default function ExperienceTask({ img, title, left, description }) {
+export default function ExperienceTask({
+  img,
+  video,
+  title,
+  left,
+  description,
+}) {
+  const [previewVideo, setPreviewVideo] = useState(false);
+
+  // useEffect(() => {
+  //   video && videoRef.current.play();
+  // }, []);
+
   const image = (
-    <div className="experienceTask__imageContainer">
-      <img className="experienceTask__image" src={img} alt="" />
+    <div className="experience-task__Wrapper">
+      <div
+        className="experienceTask__imageContainer"
+        onMouseEnter={() => video && setPreviewVideo(true)}
+        onMouseLeave={() => video && setPreviewVideo(false)}
+      >
+        {previewVideo ? (
+          <video loop autoPlay muted className="experienceTask__video">
+            <source src={video} type="video/mp4" />
+          </video>
+        ) : (
+          <img className="experienceTask__image" src={img} alt="" />
+        )}
+      </div>
     </div>
   );
 
   return (
     <>
       {left && image}
-      <div className="experienceTask__descriptionContainer">
-        <h3
-          className={`experienceTask__title ${
-            left || "experienceTask--textRight"
-          }`}
-        >
-          {title}
-        </h3>
-        <p
-          className={`experienceTask__description ${
-            left || "experienceTask--textRight"
-          }`}
-        >
-          {description}
-        </p>
+      <div className="experience-task__Wrapper">
+        <div className="experienceTask__descriptionContainer">
+          <h3
+            className={`experienceTask__title ${
+              left || "experienceTask--textRight"
+            }`}
+          >
+            {title}
+          </h3>
+          <p
+            className={`experienceTask__description ${
+              left || "experienceTask--textRight"
+            }`}
+          >
+            {description}
+          </p>
+        </div>
       </div>
       {left || image}
     </>

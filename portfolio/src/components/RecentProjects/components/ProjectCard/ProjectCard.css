@@ -2,6 +2,7 @@
   --padding: 1rem;
 
   max-width: 450px;
+  margin: auto;
   padding: var(--padding);
   display: grid;
   border: 1px solid var(--clr-neutral-400);

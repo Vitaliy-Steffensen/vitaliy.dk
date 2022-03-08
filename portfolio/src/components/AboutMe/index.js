@@ -17,12 +17,15 @@ export default function AboutMe() {
   ];
 
   return (
-    <TimelinePage title="About me" link="about" contentMargin={220}>
-      <p className="AboutMe__container" ref={textRef}>
+    <TimelinePage title="About me" link="about">
+      <div className="AboutMe__container" ref={textRef}>
         {localScrollFraction > 0.05 && (
-          <TypeWriter className="AboutMe__paragraph" texts={texts} />
+          <div className="AboutMe__paragraph">
+            <span style={{ color: "#DE4721" }}>{"// "}</span>
+            <TypeWriter texts={texts} />
+          </div>
         )}
-      </p>
+      </div>
     </TimelinePage>
   );
 }

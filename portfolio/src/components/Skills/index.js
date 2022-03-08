@@ -6,7 +6,7 @@ import { skills } from "./skillsData";
 
 export default function Skills() {
   return (
-    <TimelinePage title="Textsack & skills" link="skills" contentMargin={200}>
+    <TimelinePage title="Textstack & skills" link="skills">
       <div className="skills__container">
         <div className="skills__card-grid">
           {skills.map((skill, skillIndex) => (

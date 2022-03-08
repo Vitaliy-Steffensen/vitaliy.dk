@@ -1,3 +1,4 @@
+//Images
 import ZolyLogo from "../../assets/Images/experience/ZolyLogo.png";
 import ZolyWebsite from "../../assets/Images/experience/zolyWebsite.png";
 import ZolyInventory from "../../assets/Images/experience/zolyInventorySystem.png";
@@ -7,6 +8,8 @@ import WasteHeroWebsite from "../../assets/Images/experience/WasteHeroWebsite.pn
 import WasteHeroPlatform from "../../assets/Images/experience/WasteHeroPlatform.png";
 import CodingPiratesLogo from "../../assets/Images/experience/CodingPiratesLogo.png";
 import CodingPiratesComputer from "../../assets/Images/experience/CodingPiratesComputer.png";
+//Videos
+import zolyApp from "../../assets/Videos/experience/zoly-app.mp4";
 
 export const experiences = [
   {
@@ -19,7 +22,7 @@ export const experiences = [
         img: ZolyWebsite,
         title: "Website",
         description:
-          "I build the entire trading platform using a WordPress base. Here I worked " +
+          "I build the entire secondhand platform using a WordPress base. Here I worked " +
           "with PHP and SQL for the back-end and JS, HTML, and CSS for the front-end. " +
           "I created a plugin that could manage all the transactions and provide an " +
           "interface for the buyers and sellers. To archive the desired design and user " +
@@ -36,6 +39,7 @@ export const experiences = [
       },
       {
         img: ZolyApp,
+        video: zolyApp,
         title: "App",
         description:
           "I build the app in React native with expo, using injected javascript to fetch the website." +

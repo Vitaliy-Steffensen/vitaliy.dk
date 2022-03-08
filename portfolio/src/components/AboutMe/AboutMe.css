@@ -1,11 +1,7 @@
-.AboutMe__container {
-  min-height: 90vh;
-}
-
 .AboutMe__paragraph {
   width: 73%;
   max-width: 1400px;
-  margin: auto;
+  margin: 10% auto auto;
   font-size: 2rem;
   color: #4b4b4b;
   font-family: "SF Display";

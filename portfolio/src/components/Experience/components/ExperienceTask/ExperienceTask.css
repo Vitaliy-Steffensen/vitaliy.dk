@@ -1,3 +1,9 @@
+.experience-task__Wrapper {
+  height: 500px;
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
 .experienceTask__imageContainer {
   max-height: 550px;
   margin: 30px auto;
@@ -6,7 +12,7 @@
 .experienceTask__image {
   object-fit: contain;
   display: block;
-  max-width: 95%;
+  max-width: 80%;
   height: 90%;
   margin: auto;
   transform: scale(1);
@@ -15,13 +21,13 @@
 
 .experienceTask__image:hover,
 .experienceTask__image:focus {
-  background-color: var(--clr-neutral-900);
-  transform: scale(1.35);
+  transform: scale(1.2);
   border: 0;
-  animation: shake 500ms 350ms forwards;
 }
 
 .experienceTask__descriptionContainer {
+  --text-padding: 70px;
+
   width: 100%;
   max-width: 950px;
   color: #242424;
@@ -29,41 +35,31 @@
 }
 
 .experienceTask__title {
-  font-size: 2.6rem;
+  font-size: 2.2rem;
   font-weight: 500;
+  padding-right: var(--text-padding);
+  padding-left: 0px;
+}
+
+.experienceTask__description {
+  font-family: "Helvetica";
+  text-align: justify;
+  font-size: 1.3rem;
+  line-height: 1.7;
+  margin-top: 20px;
+  padding-right: var(--text-padding);
+  padding-left: 0px;
 }
 
 .experienceTask--textRight {
   text-align-last: right;
+  padding-left: var(--text-padding);
+  padding-right: 0px;
 }
 
-.experienceTask__description {
-  text-align: justify;
-  font-size: 1.5rem;
-  line-height: 1.6;
-  margin-top: 20px;
-}
-
-@keyframes shake {
-  0% {
-    transform: scale(1.35) rotate(0deg);
-  }
-  25% {
-    transform: scale(1.35) rotate(5deg);
-  }
-  40% {
-    transform: scale(1.35) rotate(-5deg);
-  }
-  50% {
-    transform: scale(1.35) rotate(2deg);
-  }
-  60% {
-    transform: scale(1.35) rotate(-5deg);
-  }
-  75% {
-    transform: scale(1.35) rotate(-2deg);
-  }
-  100% {
-    transform: scale(1.35) rotate(0deg);
-  }
+.experienceTask__video {
+  object-fit: contain;
+  max-width: 80%;
+  margin: auto;
+  display: block;
 }

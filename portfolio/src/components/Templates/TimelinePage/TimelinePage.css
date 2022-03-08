@@ -1,0 +1,9 @@
+.timeline-page {
+  display: flex;
+}
+
+.timeline-page__content {
+  margin: 200px 0px;
+  flex: 1;
+  min-height: calc(100vh - 400px);
+}

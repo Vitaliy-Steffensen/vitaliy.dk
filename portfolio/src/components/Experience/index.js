@@ -7,7 +7,7 @@ import { experiences } from "./ExperienceData";
 
 export default function Experience() {
   return (
-    <TimelinePage title="experience" link="experience" contentMargin={200}>
+    <TimelinePage title="experience" link="experience">
       <div className="experience">
         {experiences?.map((job, i) => (
           <React.Fragment key={i}>
@@ -20,6 +20,7 @@ export default function Experience() {
             {job.tasks?.map((task, i) => (
               <ExperienceTask
                 img={task.img}
+                video={task.video}
                 title={task.title}
                 description={task.description}
                 left={Math.abs(i) % 2 === 1}

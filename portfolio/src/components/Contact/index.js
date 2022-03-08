@@ -64,7 +64,7 @@ export default function Contact() {
   }, [selectedStep]);
 
   return (
-    <TimelinePage title="Contact" link="contact" contentMargin={200}>
+    <TimelinePage title="Contact" link="contact">
       <div className="contact">
         <MultiStepFormProgressBar
           steps={["YOUR INFO", "MESSAGE", "CONFIRMATION"]}

@@ -7,7 +7,7 @@
 
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(2, 1fr);
-  margin: 200px 500px auto;
+  grid-template-columns: 1fr;
+  margin: 200px auto;
   z-index: 100;
 }

@@ -42,8 +42,8 @@ export default function TypeWriter({ texts, className }) {
   }, [blink]);
 
   return (
-    <p className={className}>{`${texts[index].substring(0, subIndex)}${
+    <span className={className}>{`${texts[index].substring(0, subIndex)}${
       blink ? "|" : " "
-    }`}</p>
+    }`}</span>
   );
 }
