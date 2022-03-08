@@ -16,6 +16,8 @@
   z-index: 1;
   transition: transform 350ms ease, background-color 350ms ease,
     color 350ms ease, z-index 0ms 75ms linear;
+
+  animation: updown 3s ease 6;
 }
 
 .project-card:hover,
@@ -104,4 +106,24 @@
 .project-card__content-container {
   display: flex;
   margin: auto 0px 0px;
+}
+
+@keyframes updown {
+  0%,
+  50%,
+  100% {
+    transform: translatey(0);
+  }
+  20% {
+    transform: translatey(5px);
+  }
+  25% {
+    transform: translatey(-20px);
+  }
+  30% {
+    transform: translatey(20px);
+  }
+  35% {
+    transform: translatey(-5px);
+  }
 }
