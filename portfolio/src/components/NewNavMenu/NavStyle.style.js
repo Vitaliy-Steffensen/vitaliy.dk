@@ -2,11 +2,12 @@ import styled from "styled-components";
 
 export const NavStyle = styled.div`
   position: fixed;
+  inset: 0;
   z-index: 500;
 
   .hamburger {
     position: absolute;
-    left: 30px;
+    right: 30px;
     top: 30px;
     display: flex;
     height: 18px;
@@ -33,17 +34,17 @@ export const NavStyle = styled.div`
     background: #fff;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     padding: 0 60px;
     display: flex;
     flex-direction: column;
-    transform: translatex(-100%);
+    transform: translatex(100%);
     transition: transform 0.4s ease-in-out;
 
     &__close {
       position: absolute;
       top: 50%;
-      right: -30px;
+      left: -30px;
       background: #fff;
       height: 60px;
       width: 60px;
@@ -52,7 +53,7 @@ export const NavStyle = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
-      transform: translatex(-100%);
+      transform: translatex(100%);
       cursor: pointer;
       transition: transform 0.4s ease-in-out 0.2s;
 
@@ -84,7 +85,7 @@ export const NavStyle = styled.div`
       a {
         color: currentcolor;
         text-decoration: none;
-        transform: translatex(-80%);
+        transform: translatex(80%);
         transition: transform 0.4s ease-in-out;
 
         &::before {
@@ -94,8 +95,8 @@ export const NavStyle = styled.div`
           width: 120px;
           position: absolute;
           bottom: -2px;
-          left: 0;
-          transform: translatex(-50%);
+          right: 0;
+          transform: translatex(50%);
           opacity: 0;
           transition: transform 0.4s ease-in-out, opacity 0.4s linear;
         }
