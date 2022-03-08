@@ -1,0 +1,66 @@
+/* *,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+:root {
+  --gutter-lg: 4rem;
+  --gutter-md: 3rem;
+  --gutter-sm: 1rem;
+  --gutter-xm: 1rem;
+  --color-white: #fff;
+  --color-black: #000;
+}
+
+/* body {
+  background: var(--color-black);
+  font: 16px verdana;
+  color: var(--color-white);
+} */
+
+.banner {
+  display: flex;
+  height: 100vh;
+}
+
+.button {
+  margin: auto;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+  box-shadow: 0 0 20px 20px rgb(0 0 0 / 3%);
+  border-radius: 50px;
+}
+
+.button-wrap-wrapper {
+  width: 192px;
+  height: 192px;
+  /* border: 1px dashed #fff; */
+  margin: auto;
+  display: flex;
+}
+
+.button-wrap {
+  width: 128px;
+  height: 128px;
+  margin: auto;
+  /* background: orange; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px dashed #fff; */
+}
+
+.button__like-text {
+  display: block;
+  color: var(--color-black);
+  background: var(--color-white);
+  width: var(--gutter-lg);
+  height: var(--gutter-lg);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -5,10 +5,10 @@ export const NavStyle = styled.div`
   inset: 0;
   z-index: 500;
 
-  .hamburger {
+  .nav__hamburger {
     position: absolute;
-    right: 30px;
-    top: 30px;
+    right: 100px;
+    top: -50px;
     display: flex;
     height: 18px;
     width: 24px;
@@ -18,16 +18,14 @@ export const NavStyle = styled.div`
     user-select: none;
     z-index: 1;
 
-    &__icon {
-      display: inline-block;
-      height: 2px;
-      width: 24px;
-      background: #fff;
-      border-radius: 2px;
+    &-icon {
+      z-index: 10;
+      font-size: 30px;
+      color: #898989;
     }
   }
 
-  .sidebar {
+  .nav__sidebar {
     z-index: 500;
     height: 100vh;
     width: 230px;
@@ -41,7 +39,7 @@ export const NavStyle = styled.div`
     transform: translatex(100%);
     transition: transform 0.4s ease-in-out;
 
-    &__close {
+    &-close {
       position: absolute;
       top: 50%;
       left: -30px;
@@ -118,17 +116,12 @@ export const NavStyle = styled.div`
       }
     }
 
-    &__social {
+    &-social {
       display: flex;
       list-style: none;
       padding: 0;
-
-      li {
+      a {
         margin: 4px;
-      }
-
-      a,
-      svg {
         display: inline-block;
         height: 18px;
         width: 18px;
@@ -140,15 +133,15 @@ export const NavStyle = styled.div`
     display: none;
 
     &:checked {
-      & + .sidebar {
+      & + .nav__sidebar {
         transform: translatex(0);
       }
 
-      & + .sidebar .sidebar__close {
+      & + .nav__sidebar .nav__sidebar-close {
         transform: translatex(0) rotate(45deg);
       }
 
-      & + .sidebar .sidebar__menu a {
+      & + .nav__sidebar .nav__sidebar__menu a {
         transform: translatex(0);
       }
     }

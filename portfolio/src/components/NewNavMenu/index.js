@@ -4,19 +4,21 @@ import {
   MenuOutlined,
 } from "@ant-design/icons";
 import React from "react";
+import InteractiveHamburger from "./InteractiveHamburger";
 import { NavStyle } from "./NavStyle.style";
 import "./NewNavMenu.css";
 
 export default function NewNavMenu() {
   return (
     <NavStyle>
-      <label for="menu-control" className="hamburger">
-        <MenuOutlined style={{ fontSize: 40, color: "#242424", zIndex: 10 }} />
+      <label htmlFor="menu-control" className="nav__hamburger onHover--pointer">
+        <InteractiveHamburger />
+        {/* <MenuOutlined className="interactive-hamburger" /> */}
       </label>
       <input type="checkbox" id="menu-control" className="menu-control" />
 
-      <div className="sidebar">
-        <nav className="sidebar__menu">
+      <div className="nav__sidebar">
+        <nav className="nav__sidebar__menu">
           <a href="">Home</a>
           <a href="">About us</a>
           <a href="">Services</a>
@@ -25,22 +27,18 @@ export default function NewNavMenu() {
         </nav>
 
         <label
-          for="menu-control"
-          className="sidebar__close onHover--pointer"
+          htmlFor="menu-control"
+          className="nav__sidebar-close onHover--pointer"
         ></label>
 
-        <ul className="sidebar__social">
-          <li>
-            <a href="">
-              <LinkedinOutlined />
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <GithubOutlined />
-            </a>
-          </li>
-        </ul>
+        <div className="nav__sidebar-social">
+          <a href="">
+            <LinkedinOutlined />
+          </a>
+          <a href="">
+            <GithubOutlined />
+          </a>
+        </div>
       </div>
     </NavStyle>
   );
