@@ -1,19 +1,13 @@
-import {
-  GithubOutlined,
-  LinkedinOutlined,
-  MenuOutlined,
-} from "@ant-design/icons";
+import { GithubOutlined, LinkedinOutlined } from "@ant-design/icons";
 import React from "react";
 import InteractiveHamburger from "./InteractiveHamburger";
 import { NavStyle } from "./NavStyle.style";
-import "./NewNavMenu.css";
 
 export default function NewNavMenu() {
   return (
     <NavStyle>
-      <label htmlFor="menu-control" className="nav__hamburger onHover--pointer">
+      <label htmlFor="menu-control" className="nav__hamburger">
         <InteractiveHamburger />
-        {/* <MenuOutlined className="interactive-hamburger" /> */}
       </label>
       <input type="checkbox" id="menu-control" className="menu-control" />
 

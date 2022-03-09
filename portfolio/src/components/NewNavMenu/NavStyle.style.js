@@ -2,13 +2,14 @@ import styled from "styled-components";
 
 export const NavStyle = styled.div`
   position: fixed;
-  inset: 0;
-  z-index: 500;
+  top: 0;
+  right: 0;
+  z-index: 50;
 
   .nav__hamburger {
     position: absolute;
-    right: 100px;
-    top: -50px;
+    top: 0px;
+    right: 0px;
     display: flex;
     height: 18px;
     width: 24px;
@@ -17,12 +18,6 @@ export const NavStyle = styled.div`
     cursor: pointer;
     user-select: none;
     z-index: 1;
-
-    &-icon {
-      z-index: 10;
-      font-size: 30px;
-      color: #898989;
-    }
   }
 
   .nav__sidebar {
