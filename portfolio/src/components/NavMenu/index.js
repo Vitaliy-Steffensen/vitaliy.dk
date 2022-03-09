@@ -4,7 +4,7 @@ import InternalButton from "../elements/InternalButton";
 import InteractiveHamburger from "./InteractiveHamburger";
 import { NavItems, socialItems } from "./navItems";
 import { NavStyle } from "./NavStyle.style";
-import StyledNavItem from "./StyledNavItem.style.css";
+import StyledNavItem from "./StyledNavItem";
 
 export default function NavMenu() {
   return (

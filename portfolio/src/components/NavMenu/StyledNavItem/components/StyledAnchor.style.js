@@ -16,7 +16,6 @@ export const StyledAnchor = styled.a`
   &::before {
     content: "";
     position: absolute;
-
     left: ${({ circlePosition }) => circlePosition.x + "px"};
     top: ${({ circlePosition }) => circlePosition.y + "px"};
     transform: translate(-50%, -50%);

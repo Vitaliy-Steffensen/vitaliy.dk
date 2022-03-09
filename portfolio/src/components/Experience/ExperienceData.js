@@ -39,7 +39,6 @@ export const experiences = [
       },
       {
         img: ZolyApp,
-        video: zolyApp,
         title: "App",
         description:
           "I build the app in React native with expo, using injected javascript to fetch the website." +
