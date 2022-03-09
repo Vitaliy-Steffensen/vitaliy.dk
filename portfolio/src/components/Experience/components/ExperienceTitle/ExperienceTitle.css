@@ -49,3 +49,37 @@
 .experienceTitle--wideSubtitle {
   margin: 0px 30px;
 }
+
+@media (max-width: 1024px) {
+  .experienceTitle__containerLeft {
+    margin: 140px auto 0 0;
+  }
+  .experienceTitle__containerRight {
+    margin: 40px auto;
+  }
+
+  .experienceTitle__image {
+    max-width: 70%;
+  }
+
+  .experienceTitle__timelineMark {
+    width: 20px;
+    height: 20px;
+    margin-left: -10px;
+  }
+
+  .experienceTitle__titleContainer {
+    position: relative;
+    text-align: center;
+  }
+
+  .experienceTitle__title {
+    font-size: 1.7rem;
+    margin: auto;
+    text-align: center;
+  }
+
+  .experienceTitle--wideSubtitle {
+    margin: auto 10px;
+  }
+}

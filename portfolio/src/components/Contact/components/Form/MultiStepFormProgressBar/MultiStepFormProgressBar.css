@@ -46,3 +46,9 @@
   stroke-width: 4;
   transition: all 200ms ease;
 }
+
+@media (max-width: 1024px) {
+  .progress-bar {
+    max-width: 80%;
+  }
+}

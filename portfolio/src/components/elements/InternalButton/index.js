@@ -12,7 +12,7 @@ export default function InternalButton({ children, onClick }) {
 
   return (
     <InternalButtonContainer
-      className="internal-button"
+      className="internal-button onHover--pointer"
       onMouseMove={onMouseMove}
       circlePosition={circlePosition}
       onClick={onClick}

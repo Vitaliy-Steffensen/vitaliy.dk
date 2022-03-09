@@ -19,3 +19,8 @@
   color: #de4721;
   display: block;
 }
+@media (max-width: 1024px) {
+  .contact {
+    max-width: 100%;
+  }
+}

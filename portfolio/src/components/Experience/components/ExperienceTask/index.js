@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { useWindowSize } from "../../../../Hooks/useWindowSize";
 import "./ExperienceTask.css";
 
 export default function ExperienceTask({
@@ -9,10 +10,7 @@ export default function ExperienceTask({
   description,
 }) {
   const [previewVideo, setPreviewVideo] = useState(false);
-
-  // useEffect(() => {
-  //   video && videoRef.current.play();
-  // }, []);
+  const { width } = useWindowSize();
 
   const image = (
     <div className="experience-task__Wrapper">
@@ -34,7 +32,7 @@ export default function ExperienceTask({
 
   return (
     <>
-      {left && image}
+      {width < 1024 ? image : left && image}
       <div className="experience-task__Wrapper">
         <div className="experienceTask__descriptionContainer">
           <h3
@@ -53,7 +51,7 @@ export default function ExperienceTask({
           </p>
         </div>
       </div>
-      {left || image}
+      {width > 1024 && (left || image)}
     </>
   );
 }

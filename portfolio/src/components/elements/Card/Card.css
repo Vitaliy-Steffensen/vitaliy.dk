@@ -20,3 +20,10 @@
   text-decoration-color: #de4721;
   text-underline-offset: 2px;
 }
+
+@media (max-width: 767px) {
+  .card__title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+}

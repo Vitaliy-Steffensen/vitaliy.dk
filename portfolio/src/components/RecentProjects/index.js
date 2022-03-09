@@ -1,9 +1,8 @@
 import React from "react";
 import TimelinePage from "../Templates/TimelinePage";
 import "./RecentProject.css";
-import "./offset-card-grid.css";
 import { projects } from "./projects";
-import ProjectCard from "./components/NewProjectCard";
+import ProjectCard from "./components/ProjectCard";
 
 export default function RecentProjects() {
   return (

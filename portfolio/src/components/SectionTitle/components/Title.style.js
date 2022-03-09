@@ -9,8 +9,8 @@ export const Title = styled.h2`
   opacity: ${({ visible }) => (visible < 0.2 ? `0` : "1")};
 
   @media only screen and (max-width: 1024px) {
-    -webkit-text-stroke: 3px #242424;
-    font-size: 4rem;
+    -webkit-text-stroke: 2px #242424;
+    font-size: 3rem;
     line-height: 4rem;
   }
 `;

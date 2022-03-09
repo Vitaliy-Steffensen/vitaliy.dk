@@ -1,11 +1,13 @@
 .project-card {
   --padding: 1rem;
+  border-radius: 9px;
 
   max-width: 450px;
   margin: auto;
   padding: var(--padding);
   display: grid;
-  border: 1px solid var(--clr-neutral-400);
+  box-shadow: 2px 2px 20px #6e6e6e80;
+
   border-bottom: 5px solid var(--clr-highlight);
   aspect-ratio: 1 / 0.7;
   font-size: 2rem;
@@ -17,7 +19,7 @@
   transition: transform 350ms ease, background-color 350ms ease,
     color 350ms ease, z-index 0ms 75ms linear;
 
-  animation: updown 3s ease 6;
+  animation: updown 3s ease infinite;
 }
 
 .project-card:hover,
@@ -27,13 +29,9 @@
   border: 0;
   z-index: 10;
   transition: z-index 0ms 0ms ease, transform 350ms ease,
-    background-color 350ms ease, color 350ms ease;
-}
-
-.project-card__number {
-  color: var(--clr-highlight);
-  width: min-content;
-  margin-left: auto;
+    background-color 350ms ease, color 350ms ease, box-shadow 350ms ease;
+  box-shadow: 0px 0px 0px #fff;
+  animation: none;
 }
 
 .project-card__title {
@@ -41,8 +39,7 @@
   margin: auto auto 0px 0px;
 }
 
-.project-card::before,
-.project-card::after {
+.project-card::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -58,21 +55,10 @@
   transition: transform 350ms ease, opacity 350ms ease;
 }
 
-.project-card::after {
-  z-index: -2;
-  background: white;
-  transition: background-color 350ms ease;
-}
-
 .project-card:hover::before,
 .project-card:focus::before {
   opacity: 0.3;
   transform: translate(-50%, 50%);
-}
-
-.project-card:hover::after,
-.project-card:focus::after {
-  background-color: var(--clr-primary);
 }
 
 .project-card:hover,
@@ -106,6 +92,65 @@
 .project-card__content-container {
   display: flex;
   margin: auto 0px 0px;
+  align-items: center;
+}
+
+.project-card__demo-button {
+  color: #de4721;
+  font-size: 5rem;
+  margin: auto 10px auto 30px;
+}
+
+.project-card__thumbnail {
+  max-width: 100%;
+  opacity: 1;
+  transition: all 0.2s;
+  transform: scale(1);
+  border-radius: 9px;
+}
+
+.project-card:hover .project-card__thumbnail,
+.project-card:focus .project-card__thumbnail {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.project-card__demo-button > * {
+  filter: drop-shadow(1px 1px 4px #de4721);
+  transition: all 0.2s;
+  transform: scale(1);
+  transition: transform 0.2s;
+}
+
+.project-card__demo-button > *:hover {
+  filter: drop-shadow(1px 1px 10px #de4721);
+  transform: scale(1.1);
+}
+
+.project-card__project-info {
+  text-decoration: none;
+  opacity: 0;
+  transition: all 0.2s;
+  color: #fff;
+  position: absolute;
+  margin: 1rem;
+  font-family: "SF Display";
+  font-weight: 400;
+  transform: scale(1);
+}
+
+.project-card__project-info:hover {
+  filter: drop-shadow(1px 1px 4px rgba(255, 255, 255, 0.404));
+  transform: scale(1.1);
+}
+
+.project-card__project-info:hover svg {
+  filter: drop-shadow(1px 1px 4px rgba(255, 255, 255, 0.404));
+}
+
+.project-card:hover .project-card__project-info,
+.project-card:focus .project-card__project-info {
+  opacity: 1;
 }
 
 @keyframes updown {
@@ -125,5 +170,26 @@
   }
   35% {
     transform: translatey(-5px);
+  }
+}
+
+@media (max-width: 767px) {
+  .project-card {
+    animation: none;
+    max-width: 80%;
+  }
+
+  .project-card__thumbnail {
+    max-width: 90%;
+  }
+
+  .project-card .project-card__buttons-container {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .project-card__demo-button {
+    margin: 0;
+    right: 0;
   }
 }

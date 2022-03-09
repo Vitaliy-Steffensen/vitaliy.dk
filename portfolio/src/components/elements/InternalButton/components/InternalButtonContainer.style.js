@@ -4,8 +4,8 @@ export const InternalButtonContainer = styled.button`
   position: relative;
   display: inline-flex;
   padding: 15px 35px;
-  background: #fff;
-  color: #000;
+  background: #242424;
+  color: #fff;
   overflow: hidden;
   border: none;
   border-radius: 5px;
@@ -36,6 +36,12 @@ export const InternalButtonContainer = styled.button`
   * {
     position: relative;
     z-index: 1;
+    margin: auto;
+  }
+
+  @media (max-width: 767px) {
+    padding: 10px 30px;
+    font-size: 1.25rem;
     margin: auto;
   }
 `;

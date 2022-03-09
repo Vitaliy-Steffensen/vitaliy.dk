@@ -23,7 +23,7 @@ export default function FormField({ field, value, handleValueChange, error }) {
   };
 
   return (
-    <div className="form-field">
+    <div className="form-field onHover--pointer">
       {textEditor ? (
         <Editor
           wrapperClassName={`form-field__text-editor ${

@@ -19,3 +19,15 @@
   font-family: "SF Display";
   font-weight: normal;
 }
+
+@media (max-width: 1024px) {
+  .skills__card-grid {
+    columns: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .skill__property {
+    font-size: 1.5rem;
+  }
+}

@@ -42,6 +42,7 @@
 }
 
 .experienceTask__description {
+  max-width: 100%;
   font-family: "Helvetica";
   text-align: justify;
   font-size: 1.3rem;
@@ -62,4 +63,34 @@
   max-width: 80%;
   margin: auto;
   display: block;
+}
+
+@media (max-width: 1024px) {
+  .experienceTask__descriptionContainer {
+    margin: 0 auto 50px;
+  }
+  .experienceTask__title {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 1.75rem;
+  }
+
+  .experienceTask__description {
+    margin-top: 0;
+    max-width: 100%;
+    text-align: justify;
+    text-align-last: center;
+    padding: 15px 25px 75px;
+    font-size: 1rem;
+  }
+  .experienceTask--textRight {
+    text-align-last: center;
+    padding: 10px;
+  }
+
+  .experience-task__Wrapper {
+    height: fit-content;
+    margin: auto;
+  }
 }

@@ -6,9 +6,7 @@ function GreetingsPopup() {
   const [isVisible, setVisible] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => {
-      setDisapearanimation(true);
-    }, 1000);
+    setDisapearanimation(true);
     setTimeout(() => {
       setVisible(false);
     }, 2000);

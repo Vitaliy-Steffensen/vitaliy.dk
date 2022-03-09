@@ -5,6 +5,20 @@
   display: flex;
 }
 
+.project-cards-grid {
+  --clr-primary: #242424;
+  --clr-neutral-400: hsl(210, 1%, 64%);
+  --clr-neutral-100: hsl(210, 20%, 94%);
+
+  --clr-highlight: #de4721;
+
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+  margin: 200px auto;
+  z-index: 100;
+}
+
 .recentProject__image {
   width: 40%;
   margin: auto 5%;
@@ -61,4 +75,11 @@
 
 .recentProject--projectBtn:hover {
   background-color: #e5e3e6;
+}
+
+@media (max-width: 767px) {
+  .project-cards-grid {
+    margin: 10px;
+    max-width: 100%;
+  }
 }

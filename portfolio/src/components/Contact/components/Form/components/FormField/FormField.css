@@ -27,6 +27,7 @@
 
 .form-field__text-editor-content {
   padding: 30px;
+  min-height: 250px;
   max-height: 250px;
   overflow-x: auto;
   font-size: 1.5rem;
@@ -40,4 +41,22 @@
   color: #ff0000;
   font-size: 1.4rem;
   line-height: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .form-field__input,
+  .form-field__text-editor-content {
+    padding: 10px;
+  }
+
+  .form-field__input,
+  .form-field__text-editor {
+    margin: 4px 0px;
+    border: 2px solid #dad7d8;
+    font-size: 1.5rem;
+  }
+
+  .form-field__input--error {
+    border: #ff0000 2px solid;
+  }
 }

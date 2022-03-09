@@ -15,7 +15,6 @@ export const NavStyle = styled.div`
     width: 24px;
     flex-direction: column;
     justify-content: space-between;
-    cursor: pointer;
     user-select: none;
     z-index: 1;
   }
@@ -47,7 +46,6 @@ export const NavStyle = styled.div`
       justify-content: center;
       align-items: center;
       transform: translatex(100%);
-      cursor: pointer;
       transition: transform 0.4s ease-in-out 0.2s;
 
       &::before,
