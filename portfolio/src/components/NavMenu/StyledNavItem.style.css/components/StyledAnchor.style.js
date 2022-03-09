@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const InternalButtonContainer = styled.button`
+export const StyledAnchor = styled.a`
   position: relative;
   display: inline-flex;
   padding: 15px 35px;
@@ -8,8 +8,8 @@ export const InternalButtonContainer = styled.button`
   color: #000;
   overflow: hidden;
   border: none;
-  border-radius: 5px;
-
+  display: block;
+  text-align: right;
   font-family: "SF Display";
   font-size: 1.5rem;
 
@@ -29,13 +29,19 @@ export const InternalButtonContainer = styled.button`
   }
 
   &:hover::before {
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
   }
 
   * {
     position: relative;
     z-index: 1;
     margin: auto;
+    color: #898989;
+    transition: color 0.5s ease;
+  }
+
+  &:hover * {
+    color: #fff;
   }
 `;

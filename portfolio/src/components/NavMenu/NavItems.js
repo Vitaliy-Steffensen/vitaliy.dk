@@ -4,41 +4,35 @@ export const NavItems = [
   {
     name: "Intro",
     link: "#intro",
-    icon: null,
   },
   {
     name: "About me",
     link: "#about",
-    icon: null,
   },
   {
     name: "Experience",
     link: "#experience",
-    icon: null,
   },
   {
     name: "Recent project",
     link: "#recent-project",
-    icon: null,
   },
   {
     name: "Texststack & Skills",
     link: "#skills",
-    icon: null,
   },
   {
-    name: "Contact",
+    name: "Get in touch",
     link: "#contact",
-    icon: null,
   },
+];
+export const socialItems = [
   {
-    name: "LinkedIn",
-    link: "https://www.linkedin.com/in/vitaliy-steffensen-04b4b71b1/",
     icon: <LinkedinOutlined />,
+    link: "https://www.linkedin.com/in/vitaliy-steffensen-04b4b71b1/",
   },
   {
-    name: "Git",
-    link: "https://github.com/Vitaliy-Steffensen",
     icon: <GithubOutlined />,
+    link: "https://github.com/Vitaliy-Steffensen",
   },
 ];

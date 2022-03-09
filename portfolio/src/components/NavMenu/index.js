@@ -1,38 +1,41 @@
-import React, { useState } from "react";
-import "./NavMenu.css";
-import { NavItems } from "./NavItems";
-import arrowRight from "../../assets/Images/Icons/arrowRight.png";
-import arrowLeft from "../../assets/Images/Icons/arrowLeft.png";
-import { LinkedinOutlined, GithubOutlined } from "@ant-design/icons";
+import { GithubOutlined, LinkedinOutlined } from "@ant-design/icons";
+import React from "react";
+import InternalButton from "../elements/InternalButton";
+import InteractiveHamburger from "./InteractiveHamburger";
+import { NavItems, socialItems } from "./navItems";
+import { NavStyle } from "./NavStyle.style";
+import StyledNavItem from "./StyledNavItem.style.css";
 
 export default function NavMenu() {
-  const [open, setOpen] = useState(false);
-
   return (
-    <div
-      onClick={() => open || setOpen((prevState) => !prevState)}
-      className={`navMenu ${open || "navMenu--closeMenu onHover--pointer"}`}
-    >
-      <img
-        className="navMenu__toggle onHover--pointer"
-        onClick={() => open && setOpen((prevState) => !prevState)}
-        src={open ? arrowRight : arrowLeft}
-        alt=""
-      />
+    <NavStyle>
+      <label htmlFor="menu-control" className="nav__hamburger">
+        <InteractiveHamburger />
+      </label>
+      <input type="checkbox" id="menu-control" className="menu-control" />
 
-      <div className={`navMenu__content ${open || "navMenu--closeContent"}`}>
-        {NavItems?.map((item, i) => (
-          <a className="from-right navMenu__option" href={item.link} key={i}>
-            {item?.icon ? (
-              <div className="navMenu__optionImage">{item?.icon}</div>
-            ) : (
-              <span className="navMenu__optionText onHover--pointer">
-                {item.name}
-              </span>
-            )}
-          </a>
-        ))}
+      <div className="nav__sidebar">
+        <nav className="nav__sidebar__menu">
+          {NavItems?.map((item, i) => (
+            <StyledNavItem href={item?.link} key={i}>
+              {item?.name}
+            </StyledNavItem>
+          ))}
+        </nav>
+
+        <label
+          htmlFor="menu-control"
+          className="nav__sidebar-close onHover--pointer"
+        ></label>
+
+        <div className="nav__sidebar-social">
+          {socialItems?.map((item, i) => (
+            <a className="onHover--pointer" href={item?.link} key={i}>
+              {item?.icon}
+            </a>
+          ))}
+        </div>
       </div>
-    </div>
+    </NavStyle>
   );
 }

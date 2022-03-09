@@ -20,7 +20,7 @@ export default function InteractiveHamburger() {
     });
   };
 
-  const styleObj = inZone
+  const hamburgerPositionStyle = inZone
     ? {
         transform: `translate(
     ${circlePosition.x - 40}px, ${circlePosition.y - 25}px
@@ -41,7 +41,7 @@ export default function InteractiveHamburger() {
       >
         <div
           className={`interactive-hamburger__icon-container onHover--pointer `}
-          style={styleObj}
+          style={hamburgerPositionStyle}
           onMouseMove={onMouseMove}
         >
           <MenuOutlined className="interactive-hamburger__icon" />

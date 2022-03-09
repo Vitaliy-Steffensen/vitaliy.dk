@@ -23,16 +23,16 @@ export const NavStyle = styled.div`
   .nav__sidebar {
     z-index: 500;
     height: 100vh;
-    width: 230px;
+    width: 300px;
     background: #fff;
     position: absolute;
     top: 0;
     right: 0;
-    padding: 0 60px;
     display: flex;
     flex-direction: column;
     transform: translatex(100%);
     transition: transform 0.4s ease-in-out;
+    box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.03);
 
     &-close {
       position: absolute;
@@ -70,10 +70,13 @@ export const NavStyle = styled.div`
       flex-direction: column;
       flex: 1;
       justify-content: space-around;
-      font-size: 36px;
-      margin-top: 80px;
-      margin-bottom: 80px;
+      font-size: 2rem;
+      font-family: "SF Display";
+      font-weight: 300;
+      margin: 60px auto 100px;
       color: #898989;
+      width: 100%;
+      max-height: 76vh;
 
       a {
         color: currentcolor;
@@ -81,25 +84,6 @@ export const NavStyle = styled.div`
         transform: translatex(80%);
         transition: transform 0.4s ease-in-out;
 
-        &::before {
-          content: "";
-          height: 2px;
-          background: #898989;
-          width: 120px;
-          position: absolute;
-          bottom: -2px;
-          right: 0;
-          transform: translatex(50%);
-          opacity: 0;
-          transition: transform 0.4s ease-in-out, opacity 0.4s linear;
-        }
-
-        &:hover {
-          &::before {
-            transform: translatex(0);
-            opacity: 1;
-          }
-        }
         ${() => {
           let css;
           for (let i = 1; i < 6; i++)
@@ -114,12 +98,23 @@ export const NavStyle = styled.div`
     &-social {
       display: flex;
       list-style: none;
+      justify-content: right;
+      margin-right: 35px;
       padding: 0;
+
       a {
-        margin: 4px;
         display: inline-block;
         height: 18px;
         width: 18px;
+        color: currentcolor;
+        text-decoration: none;
+        margin-left: 25px;
+        font-size: 25px;
+        color: #898989;
+
+        &:hover {
+          color: #505050;
+        }
       }
     }
   }

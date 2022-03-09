@@ -1,7 +1,10 @@
 import React, { useState } from "react";
-import { InternalButtonContainer } from "./components/InternalButtonContainer.style";
+import {
+  InternalButtonContainer,
+  StyledAnchor,
+} from "./components/StyledAnchor.style";
 
-export default function InternalButton({ children, onClick }) {
+export default function StyledNavItem({ href, children }) {
   const [circlePosition, setCirclePosition] = useState({ x: 0, y: 0 });
 
   const onMouseMove = (e) =>
@@ -11,13 +14,13 @@ export default function InternalButton({ children, onClick }) {
     });
 
   return (
-    <InternalButtonContainer
-      className="internal-button"
+    <StyledAnchor
+      href={href}
+      className="internal-button onHover--pointer"
       onMouseMove={onMouseMove}
       circlePosition={circlePosition}
-      onClick={onClick}
     >
       <span>{children}</span>
-    </InternalButtonContainer>
+    </StyledAnchor>
   );
 }
