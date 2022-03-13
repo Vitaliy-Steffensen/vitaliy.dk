@@ -8,8 +8,9 @@ export const skills = [
       "Wordpress",
       "Typescript",
       "Graph ql & REST",
-      "Bootstrap & Sass",
+      "Styled components, Bootstrap & Sass",
       "React Native",
+      "Redux & Context",
     ],
   },
   {

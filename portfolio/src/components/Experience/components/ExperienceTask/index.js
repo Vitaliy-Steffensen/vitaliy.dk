@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useWindowSize } from "../../../../Hooks/useWindowSize";
+import T from "../../../../utils/translations/TranslatedText/index.js";
 import "./ExperienceTask.css";
 
 export default function ExperienceTask({
@@ -40,14 +41,14 @@ export default function ExperienceTask({
               left || "experienceTask--textRight"
             }`}
           >
-            {title}
+            <T>{title}</T>
           </h3>
           <p
             className={`experienceTask__description ${
               left || "experienceTask--textRight"
             }`}
           >
-            {description}
+            <T>{description}</T>
           </p>
         </div>
       </div>

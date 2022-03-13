@@ -10,5 +10,6 @@ export const Timeline = styled.div`
   @media only screen and (max-width: 1024px) {
     min-width: 20px;
     max-width: 20px;
+    width: 20px;
   }
 `;

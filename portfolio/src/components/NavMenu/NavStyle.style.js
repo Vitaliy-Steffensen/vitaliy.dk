@@ -98,12 +98,11 @@ export const NavStyle = styled.div`
       list-style: none;
       justify-content: right;
       margin-right: 35px;
+      margin-bottom: 10px;
       padding: 0;
 
       a {
         display: inline-block;
-        height: 18px;
-        width: 18px;
         color: currentcolor;
         text-decoration: none;
         margin-left: 25px;

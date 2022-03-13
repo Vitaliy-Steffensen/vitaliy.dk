@@ -2,6 +2,7 @@ import React from "react";
 import "./ProjectCard.css";
 import ExternalButton from "../../../elements/ExternalButton";
 import { CaretRightOutlined, InfoCircleOutlined } from "@ant-design/icons";
+import T from "../../../../utils/translations/TranslatedText/index.js";
 
 export default function ProjectCard({ project }) {
   const { title, thumbnail, demoLink, projectLink } = project;
@@ -12,8 +13,10 @@ export default function ProjectCard({ project }) {
       <a
         className="project-card__project-info onHover--pointer"
         href={projectLink}
+        rel="noreferrer"
+        target="_blank"
       >
-        <InfoCircleOutlined /> Project
+        <InfoCircleOutlined /> <T>project</T>
       </a>
       <div className="project-card__content-container">
         <h2 className="project-card__title">{title}</h2>
@@ -21,6 +24,8 @@ export default function ProjectCard({ project }) {
           <a
             className="project-card__demo-button onHover--pointer"
             href={demoLink}
+            rel="noreferrer"
+            target="_blank"
           >
             <CaretRightOutlined />
           </a>

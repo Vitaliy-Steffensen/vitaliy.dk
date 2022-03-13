@@ -1,4 +1,5 @@
 import React from "react";
+import T from "../../../utils/translations/TranslatedText/index.js";
 import "./Card.css";
 
 export default function Card({ children, title, titleUnderline }) {
@@ -10,7 +11,7 @@ export default function Card({ children, title, titleUnderline }) {
             titleUnderline && "card__title--underline"
           }`}
         >
-          {title}
+          <T>{title}</T>
         </p>
       )}
       {children}

@@ -13,6 +13,21 @@ import zolyApp from "../../assets/Videos/experience/zoly-app.mp4";
 
 export const experiences = [
   {
+    img: CodingPiratesLogo,
+    title: "Programming teacher",
+    fromDate: "August 2019",
+    toDate: "Today",
+    tasks: [
+      {
+        img: CodingPiratesComputer,
+        title: "C#",
+        description:
+          "Taught programming to over 20 different students. My current team contains eight " +
+          "motivated students learning C#.",
+      },
+    ],
+  },
+  {
     img: ZolyLogo,
     title: "CEO & Lead Developer",
     fromDate: "Septemper 2020",
@@ -24,8 +39,8 @@ export const experiences = [
         description:
           "I build the entire secondhand platform using a WordPress base. Here I worked " +
           "with PHP and SQL for the back-end and JS, HTML, and CSS for the front-end. " +
-          "I created a plugin that could manage all the transactions and provide an " +
-          "interface for the buyers and sellers. To archive the desired design and user " +
+          "I created a custom integration that managed the whole transactions system and provide an " +
+          "interface for the buyers and sellers. To achieve the desired design and user " +
           "journey, I made a ton of theme and plugin customizations.",
       },
       {
@@ -41,7 +56,7 @@ export const experiences = [
         img: ZolyApp,
         title: "App",
         description:
-          "I build the app in React native with expo, using injected javascript to fetch the website." +
+          "I built the app in React native with expo, using injected javascript to fetch data from the website." +
           " And using typescript for type-checking.",
       },
     ],
@@ -57,29 +72,15 @@ export const experiences = [
         title: "Platform",
         description:
           "As a front-end developer, I worked on the platform. The platform is developed using modern " +
-          "technologies, including React js, GraphQL, Redux, TypeScript, Storybook, and Ant Design.",
+          "technologies, including React js, GraphQL, Redux, TypeScript, Storybook, and Ant Design." +
+          " I alone developed an internal CMS sytem and converted the design language to ant Design",
       },
       {
         img: WasteHeroWebsite,
         title: "Website",
         description:
-          "In WasteHero i also had the lead on the custom wordpress plugin i build." +
-          " This plugin provided custom functionalities for the designers to use.",
-      },
-    ],
-  },
-  {
-    img: CodingPiratesLogo,
-    title: "Programming teacher",
-    fromDate: "August 2019",
-    toDate: "Today",
-    tasks: [
-      {
-        img: CodingPiratesComputer,
-        title: "C#",
-        description:
-          "I have been teaching programming for over two and a half years, completely voluntary." +
-          " In Coding Pirates i mainly teach C# and NuGet packages.",
+          "Worked with the marketing team and the design team to refactor the website using a" +
+          " custom integration I developed, to help gain their largest client",
       },
     ],
   },

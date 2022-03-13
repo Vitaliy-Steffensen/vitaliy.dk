@@ -12,6 +12,11 @@ export const InternalButtonContainer = styled.button`
 
   font-family: "SF Display";
   font-size: 1.5rem;
+  transition: color 0.5s;
+
+  &:hover {
+    color: #fff !important;
+  }
 
   &::before {
     content: "";

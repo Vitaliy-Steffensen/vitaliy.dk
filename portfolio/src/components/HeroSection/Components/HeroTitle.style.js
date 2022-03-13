@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { useScrollPosition } from "../../../Hooks/useScrollPosition";
 
 export const HeroTitle = styled.h2`
-  font-family: "Avenir";
+  font-family: Helvetica;
   color: transparent;
   -webkit-text-stroke: 2px #bab8bd;
   font-size: 9rem;

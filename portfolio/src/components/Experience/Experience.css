@@ -5,6 +5,18 @@
   grid-template-columns: 1fr 1fr;
   margin-top: -100px;
 }
+
+.experience__download {
+  font-size: 1.3rem;
+  color: #7e7e7e;
+  display: block;
+  margin: auto;
+  width: fit-content;
+  margin-top: 30px;
+  text-align: center;
+  max-width: 80%;
+}
+
 @media (max-width: 1024px) {
   .experience {
     grid-template-columns: 1fr;

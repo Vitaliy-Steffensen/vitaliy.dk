@@ -12,16 +12,17 @@
   border-radius: 90px;
   margin-left: -16.5px;
   z-index: 30;
-  margin-right: 30px;
+  position: absolute;
 }
 
 .experienceTitle__image {
   max-height: 170px;
+  margin-left: 40px;
 }
 
 .experienceTitle__containerRight {
   color: #242424;
-  font-family: "Avenir";
+  font-family: Helvetica;
   position: relative;
   margin-bottom: 150px;
   margin-top: 200px;

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { InternalButtonContainer } from "./components/InternalButtonContainer.style";
 
-export default function InternalButton({ children, onClick }) {
+export default function InternalButton({ children, onClick, style }) {
   const [circlePosition, setCirclePosition] = useState({ x: 0, y: 0 });
 
   const onMouseMove = (e) =>
@@ -16,6 +16,7 @@ export default function InternalButton({ children, onClick }) {
       onMouseMove={onMouseMove}
       circlePosition={circlePosition}
       onClick={onClick}
+      style={style}
     >
       <span>{children}</span>
     </InternalButtonContainer>

@@ -1,5 +1,6 @@
 import { GithubOutlined, LinkedinOutlined } from "@ant-design/icons";
 import React from "react";
+import T from "../../utils/translations/TranslatedText/index.js";
 import InternalButton from "../elements/InternalButton";
 import InteractiveHamburger from "./InteractiveHamburger";
 import { NavItems, socialItems } from "./navItems";
@@ -18,7 +19,7 @@ export default function NavMenu() {
         <nav className="nav__sidebar__menu">
           {NavItems?.map((item, i) => (
             <StyledNavItem href={item?.link} key={i}>
-              {item?.name}
+              <T>{item?.name}</T>
             </StyledNavItem>
           ))}
         </nav>
@@ -30,7 +31,13 @@ export default function NavMenu() {
 
         <div className="nav__sidebar-social">
           {socialItems?.map((item, i) => (
-            <a className="onHover--pointer" href={item?.link} key={i}>
+            <a
+              className="onHover--pointer"
+              href={item?.link}
+              rel="noreferrer"
+              target="_blank"
+              key={i}
+            >
               {item?.icon}
             </a>
           ))}

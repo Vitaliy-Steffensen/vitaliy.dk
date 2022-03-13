@@ -1,7 +1,6 @@
 .project-card {
   --padding: 1rem;
   border-radius: 9px;
-
   max-width: 450px;
   margin: auto;
   padding: var(--padding);

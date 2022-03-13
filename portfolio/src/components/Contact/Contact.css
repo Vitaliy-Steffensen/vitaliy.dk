@@ -6,11 +6,13 @@
   overflow: hidden;
   position: relative;
   height: 850px;
-  width: 100%;
 }
 
 .contact__source-container {
+  display: block;
   margin: 250px auto -150px;
+  padding-bottom: 15px;
+  text-decoration: none;
 }
 
 .contact__confirmation-icon {
@@ -22,5 +24,8 @@
 @media (max-width: 1024px) {
   .contact {
     max-width: 100%;
+  }
+  .contact__source-container {
+    margin: 250px auto -100px;
   }
 }

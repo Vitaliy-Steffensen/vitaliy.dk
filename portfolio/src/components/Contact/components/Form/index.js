@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { capitalizeFirstLetter } from "../../../../helpers/constants";
+import T from "../../../../utils/translations/TranslatedText/index.js";
 import InternalButton from "../../../elements/InternalButton";
 import FormField from "./components/FormField";
 import "./Form.css";
@@ -66,7 +67,9 @@ export default function Form({
       className={`form-card ${selectedStep === stepNumber ? "active" : "hide"}`}
       data-step={stepNumber}
     >
-      <h3 className="step-title">{stepTitle}</h3>
+      <h3 className="step-title">
+        <T>{stepTitle}</T>
+      </h3>
       {fields?.map((field, i) => (
         <FormField
           field={field}
@@ -83,7 +86,7 @@ export default function Form({
             type="button"
             onClick={gotoPreviousStep}
           >
-            Previous
+            <T>Previous</T>
           </InternalButton>
         )}
         <InternalButton
@@ -91,7 +94,7 @@ export default function Form({
           type="button"
           onClick={gotoNextStep}
         >
-          {isSubmit ? "Submit" : "Next"}
+          <T>{isSubmit ? "Submit" : "Next"}</T>
         </InternalButton>
       </div>
     </div>

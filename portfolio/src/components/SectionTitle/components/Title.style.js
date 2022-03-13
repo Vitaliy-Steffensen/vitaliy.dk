@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 export const Title = styled.h2`
-  font-family: "Avenir";
+  font-family: Helvetica;
   font-size: 6.5rem;
+  line-height: 1.8;
   color: transparent;
-  -webkit-text-stroke: 5px #242424;
+  -webkit-text-stroke: 4px #242424;
   margin-left: 15px;
   opacity: ${({ visible }) => (visible < 0.2 ? `0` : "1")};
 

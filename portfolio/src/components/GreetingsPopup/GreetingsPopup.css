@@ -17,7 +17,7 @@
 }
 
 .greetingsPopup__title {
-  font-family: "Avenir";
+  font-family: Helvetica;
   font-size: 7rem;
   color: #242424;
   -webkit-text-stroke: 2px #bab8bd;

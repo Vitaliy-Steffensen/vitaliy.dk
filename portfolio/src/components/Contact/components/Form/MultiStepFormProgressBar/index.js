@@ -1,4 +1,5 @@
 import React from "react";
+import T from "../../../../../utils/translations/TranslatedText/index.js";
 import "./MultiStepFormProgressBar.css";
 
 const MultiStepFormProgressBar = ({ steps, selectedStep }) => {
@@ -14,7 +15,9 @@ const MultiStepFormProgressBar = ({ steps, selectedStep }) => {
             >
               {(i += 1)}
             </span>
-            <p className="progress-bar__step-title">{step}</p>
+            <p className="progress-bar__step-title">
+              <T>{step}</T>
+            </p>
           </div>
           {i < steps.length && (
             <svg

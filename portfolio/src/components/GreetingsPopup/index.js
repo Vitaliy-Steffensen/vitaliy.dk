@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import T from "../../utils/translations/TranslatedText/index.js";
 import "./GreetingsPopup.css";
 
 function GreetingsPopup() {
@@ -20,7 +21,9 @@ function GreetingsPopup() {
             disapearanimation && "greetingsPopup--disapear"
           }`}
         >
-          <span className="greetingsPopup__title">HELLO</span>
+          <span className="greetingsPopup__title">
+            <T>HELLO</T>
+          </span>
         </div>
       )}
     </>

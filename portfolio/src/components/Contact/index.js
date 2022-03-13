@@ -9,6 +9,7 @@ import ExternalButton from "../elements/ExternalButton";
 import emailjs from "emailjs-com";
 import { Spin } from "antd";
 import { LoadingOutlined, CheckCircleOutlined } from "@ant-design/icons";
+import T from "../../utils/translations/TranslatedText/index.js";
 
 export default function Contact() {
   const [selectedStep, setSelectedStep] = useState(1);
@@ -64,7 +65,7 @@ export default function Contact() {
   }, [selectedStep]);
 
   return (
-    <TimelinePage title="Contact" link="contact">
+    <TimelinePage title="Get in touch" link="contact" allowOverflow>
       <div className="contact">
         <MultiStepFormProgressBar
           steps={["YOUR INFO", "MESSAGE", "CONFIRMATION"]}
@@ -96,7 +97,9 @@ export default function Contact() {
           >
             {sendingEmail ? (
               <>
-                <h3 className="step-title">Sending...</h3>
+                <h3 className="step-title">
+                  <T>Sending...</T>
+                </h3>
                 <Spin
                   indicator={
                     <LoadingOutlined
@@ -108,22 +111,28 @@ export default function Contact() {
               </>
             ) : (
               <>
-                <h3 className="step-title">Your email has been sent</h3>
+                <h3 className="step-title">
+                  <T>Your email has been sent.</T>
+                </h3>
                 <CheckCircleOutlined className="contact__confirmation-icon" />
               </>
             )}
           </div>
         </form>
 
-        <div className="contact__source-container">
+        <a
+          href="https://github.com/Vitaliy-Steffensen/vitaliysteffensen.com-FE"
+          rel="noreferrer"
+          target="_blank"
+          className="contact__source-container"
+        >
           <ExternalButton
             title="Source"
-            link="https://github.com/Vitaliy-Steffensen/vitaliysteffensen.com-FE"
             backgroundColor="#DE4721"
             color="#242424"
             icon={<GithubOutlined />}
           />
-        </div>
+        </a>
       </div>
     </TimelinePage>
   );

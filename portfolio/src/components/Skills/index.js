@@ -1,4 +1,5 @@
 import React from "react";
+import T from "../../utils/translations/TranslatedText/index.js";
 import Card from "../elements/Card";
 import TimelinePage from "../Templates/TimelinePage";
 import "./Skills.css";
@@ -13,7 +14,7 @@ export default function Skills() {
             <Card key={skillIndex} title={skill.area} titleUnderline>
               {skill.skills.map((record, recordIndex) => (
                 <p key={recordIndex} className="skill__property">
-                  {record}
+                  <T>{record}</T>
                 </p>
               ))}
             </Card>

@@ -4,8 +4,11 @@ import { Editor } from "react-draft-wysiwyg";
 import { convertToRaw } from "draft-js";
 import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
 import draftToHtml from "draftjs-to-html";
+import translate from "../../../../../../utils/translations/translate";
+import { useSelector } from "react-redux";
 
 export default function FormField({ field, value, handleValueChange, error }) {
+  const language = useSelector((state) => state.language);
   const { name, textEditor } = field;
 
   const handleEditorChange = (editorState) => {
@@ -32,7 +35,7 @@ export default function FormField({ field, value, handleValueChange, error }) {
           editorClassName="form-field__text-editor-content"
           toolbarClassName="toolbar-class"
           onEditorStateChange={handleEditorChange}
-          placeholder={name}
+          placeholder={translate(language, name)}
         />
       ) : (
         <input
@@ -42,7 +45,7 @@ export default function FormField({ field, value, handleValueChange, error }) {
           id={name}
           onChange={handleValueChange}
           value={value}
-          placeholder={name}
+          placeholder={translate(language, name)}
         />
       )}
       {error && <p className="form-field__error">{error}</p>}

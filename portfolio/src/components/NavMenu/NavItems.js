@@ -18,7 +18,7 @@ export const NavItems = [
     link: "#recent-project",
   },
   {
-    name: "Texststack & Skills",
+    name: "Textstack & skills",
     link: "#skills",
   },
   {
