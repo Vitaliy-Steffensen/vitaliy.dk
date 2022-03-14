@@ -12,3 +12,6 @@ For the scroll based animations i created 2 custom hooks ```useScrollPosition```
 
   # Sidebar
   The sidebar is made using a checkbox input which the css uses to identfy it's state. The buttons in the menu contains masked pseudo elements which scale on hover.
+
+  #creatopm
+  //Everything is made from scratch inlcuding the multi-step-form and the sidebar.
