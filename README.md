@@ -7,9 +7,9 @@ The language selection is made using redux and react cookies. For easy access i 
 # Animations and design
   All the design and animations are designed in Adobe XD and implemented using css and styled components. For the frequently changing statebased styling i used styled object, to prevent vast class creation.
   
-For the scroll based animations i created 2 custom hooks. The first contain
+For the scroll based animations i created 2 custom hooks ```useScrollPosition``` & ```useLocalScrollFraction```. The first contain
   
-  ```useScrollPosition```
+  
 
   # Sidebar
   The sidebar is made using a checkbox input which the css uses to identfy it's state. The buttons in the menu contains masked pseudo elements which scale on hover.
