@@ -14,11 +14,11 @@ export const NavItems = [
     link: "#experience",
   },
   {
-    name: "Recent project",
-    link: "#recent-project",
+    name: "Recent projects",
+    link: "#recent-projects",
   },
   {
-    name: "Textstack & skills",
+    name: "Teck stack & skills",
     link: "#skills",
   },
   {

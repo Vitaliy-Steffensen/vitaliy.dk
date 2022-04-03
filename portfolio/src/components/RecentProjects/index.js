@@ -7,8 +7,8 @@ import ProjectCard from "./components/ProjectCard";
 export default function RecentProjects() {
   return (
     <TimelinePage
-      title="Most recent project"
-      link="recent-project"
+      title="Most recent projects"
+      link="recent-projects"
       allowOverflow
     >
       <div className="project-cards-grid">

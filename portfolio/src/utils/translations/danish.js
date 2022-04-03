@@ -21,8 +21,8 @@ const translate = (text) => {
       return "Erfaring";
     case "Recent project":
       return "Seneste projekt";
-    case "Textstack & skills":
-      return "Textstack & færdigheder";
+    case "Teck stack & skills":
+      return "Teck stack & færdigheder";
     case "Get in touch":
       return "Kom i kontakt";
 
@@ -101,8 +101,8 @@ const translate = (text) => {
       return "Download mit";
     case "to see the full list.":
       return ",for at se hele listen.";
-    case "Most recent project":
-      return "Seneste projekt";
+    case "Most recent projects":
+      return "Seneste projekter";
     case "Design languages (antD & MUI)":
       return "Design sprog (antD & MUI)";
     case "Other skills":

@@ -16,8 +16,6 @@ export default function StyledNavItem({ href, children }) {
   return (
     <StyledAnchor
       href={href}
-      rel="noreferrer"
-      target="_blank"
       className="internal-button onHover--pointer"
       onMouseMove={onMouseMove}
       circlePosition={circlePosition}
