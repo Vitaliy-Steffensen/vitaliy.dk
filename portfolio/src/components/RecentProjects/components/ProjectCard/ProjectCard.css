@@ -79,7 +79,7 @@
   inset: auto var(--padding) var(--padding) auto;
   opacity: 0;
   transform: translateX(-50%);
-  transition: transform 200ms ease-in, opacity 200ms linear;
+  transition: transform 500ms ease-in, opacity 500ms linear;
 }
 
 .project-card:hover .project-card__buttons-container,

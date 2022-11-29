@@ -1,4 +1,5 @@
-//Images
+import SchibstedLogo from "../../assets/Images/experience/schibstedLogo.png";
+import schibstedAdvertisingService from "../../assets/Images/experience/schibstedAdvertisingService.png";
 import ZolyLogo from "../../assets/Images/experience/ZolyLogo.png";
 import ZolyWebsite from "../../assets/Images/experience/zolyWebsite.png";
 import ZolyInventory from "../../assets/Images/experience/zolyInventorySystem.png";
@@ -8,22 +9,38 @@ import WasteHeroWebsite from "../../assets/Images/experience/WasteHeroWebsite.pn
 import WasteHeroPlatform from "../../assets/Images/experience/WasteHeroPlatform.png";
 import CodingPiratesLogo from "../../assets/Images/experience/CodingPiratesLogo.png";
 import CodingPiratesComputer from "../../assets/Images/experience/CodingPiratesComputer.png";
-//Videos
-import zolyApp from "../../assets/Videos/experience/zoly-app.mp4";
 
 export const experiences = [
+  {
+    img: SchibstedLogo,
+    title: "Front-end developer",
+    fromDate: "May 2022",
+    toDate: "Today",
+    tasks: [
+      {
+        img: schibstedAdvertisingService,
+        title: "Shared Advertising Service",
+        description:
+            "Managed, planned, and Lead the process of 2 of our largest projects this year" +
+            "Solved some major disregarded technical issues, which the team has dealt with for years." +
+            "My work has a direct revenue impact, so having a high architectural focus, and communicating" +
+            "with different stakeholders and teams is a big part of what i do in the balance squad (advertising).",
+      },
+    ],
+  },
   {
     img: CodingPiratesLogo,
     title: "Programming teacher",
     fromDate: "August 2019",
-    toDate: "Today",
+    toDate: "June 2022",
     tasks: [
       {
         img: CodingPiratesComputer,
         title: "C#",
         description:
           "Taught programming to over 20 different students. My current team contains eight " +
-          "motivated students learning C#.",
+          "motivated students learning C#. " +
+          "I also did remote private lessons in various software development topics at Superprof throughout the first half of 2022",
       },
     ],
   },

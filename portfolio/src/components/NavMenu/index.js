@@ -3,9 +3,9 @@ import React from "react";
 import T from "../../utils/translations/TranslatedText/index.js";
 import InternalButton from "../elements/InternalButton";
 import InteractiveHamburger from "./InteractiveHamburger";
-import { NavItems, socialItems } from "./navItems";
 import { NavStyle } from "./NavStyle.style";
 import StyledNavItem from "./StyledNavItem";
+import {NavItems, socialItems} from "./NavItems";
 
 export default function NavMenu() {
   return (

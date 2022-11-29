@@ -1,4 +1,4 @@
-import { LinkedinOutlined, GithubOutlined } from "@ant-design/icons";
+import { LinkedinOutlined, GithubOutlined, MediumOutlined } from "@ant-design/icons";
 
 export const NavItems = [
   {
@@ -18,7 +18,7 @@ export const NavItems = [
     link: "#recent-projects",
   },
   {
-    name: "Teck stack & skills",
+    name: "Tech stack & skills",
     link: "#skills",
   },
   {
@@ -28,11 +28,15 @@ export const NavItems = [
 ];
 export const socialItems = [
   {
+    icon: <MediumOutlined />,
+    link: "https://medium.com/@vitaliysteffensen",
+  },
+  {
     icon: <LinkedinOutlined />,
     link: "https://www.linkedin.com/in/vitaliy-steffensen-04b4b71b1/",
   },
   {
     icon: <GithubOutlined />,
     link: "https://github.com/Vitaliy-Steffensen",
-  },
+  }
 ];

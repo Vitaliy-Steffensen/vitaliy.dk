@@ -18,6 +18,7 @@
 .experienceTitle__image {
   max-height: 170px;
   margin-left: 40px;
+  max-width: 65%;
 }
 
 .experienceTitle__containerRight {
