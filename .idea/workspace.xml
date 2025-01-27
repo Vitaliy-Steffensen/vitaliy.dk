@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0a155422-5a37-457f-aad0-574342eae3a0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/portfolio/src/assets/Images/projects/findy.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/src/assets/Images/projects/watodo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/src/assets/other/Vitaliy_Steffensen-resume(old again).pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/src/assets/other/Vitaliy_Steffensen-resume.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/src/assets/other/Vitaliy_Steffensen-resume.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/src/components/AboutMe/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/src/components/AboutMe/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/src/components/Experience/ExperienceData.js" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/src/components/Experience/ExperienceData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/src/components/HeroSection/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/src/components/HeroSection/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/src/components/RecentProjects/projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/src/components/RecentProjects/projects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/src/components/Skills/skillsData.js" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/src/components/Skills/skillsData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/src/utils/translations/danish.js" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/src/utils/translations/danish.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2sDL0TX1gmTRBpkT0MS9H4b74yk" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0a155422-5a37-457f-aad0-574342eae3a0" name="Changes" comment="" />
+      <created>1737984975910</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1737984975910</updated>
+      <workItem from="1737984977560" duration="3744000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>

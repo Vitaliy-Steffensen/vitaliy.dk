@@ -13,24 +13,28 @@ import CodingPiratesComputer from "../../assets/Images/experience/CodingPiratesC
 export const experiences = [
   {
     img: SchibstedLogo,
-    title: "Front-end developer",
+    title: "Tech Lead / Frontend developer",
     fromDate: "May 2022",
     toDate: "Today",
     tasks: [
       {
         img: schibstedAdvertisingService,
-        title: "Shared Advertising Service",
+        title: "Formerly Ebay",
         description:
-            "Managed, planned, and Lead the process of 2 of our largest projects this year" +
-            "Solved some major disregarded technical issues, which the team has dealt with for years." +
-            "My work has a direct revenue impact, so having a high architectural focus, and communicating" +
-            "with different stakeholders and teams is a big part of what i do in the balance squad (advertising).",
+            `With the freedom to shape projects beyond frontend development i effectively
+managed stakeholders and leveraged data insights to guide key product decisions,
+helping drive millions in revenue growth. 
+I led major initiatives in different teams including anything from making automation
+tools saving others time on a daily basis to taking charge of platform migration and
+architectural discussions. I have also spent time optimizing development processes and supporting developer
+interviews & integration. With a large cross country area i congruently optimize processes, enhance scalability,
+and supported developer interviews and integration.`,
       },
     ],
   },
   {
     img: CodingPiratesLogo,
-    title: "Programming teacher",
+    title: "Programming Instructor",
     fromDate: "August 2019",
     toDate: "June 2022",
     tasks: [
@@ -38,9 +42,10 @@ export const experiences = [
         img: CodingPiratesComputer,
         title: "C#",
         description:
-          "Taught programming to over 20 different students. My current team contains eight " +
-          "motivated students learning C#. " +
-          "I also did remote private lessons in various software development topics at Superprof throughout the first half of 2022",
+          `Provided remote, one-on-one software development lessons through Superprof
+(2022), guiding students on diverse programming topics.
+Delivered hands-on C# and game development training at Coding Pirates  for teens
+(2019-2022).`,
       },
     ],
   },

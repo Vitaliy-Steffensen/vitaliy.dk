@@ -12,13 +12,19 @@ export default function AboutMe() {
   const language = useSelector((state) => state.language);
 
   const texts = [
-    tranlate(language, "As a developer"),
+    tranlate(language, "With expertise"),
     tranlate(
       language,
-      "As a dedicated developer, I've built anything from video " +
-        "games to computer software. Now my passion lies in website " +
-        "development. I have been programming longer than I can remember " +
-        "and have always admired the startup and scale-up industry."
+      `
+      With proven expertise in managing complex, cross-functional
+projects and streamlining processes, I have consistently
+delivered measurable results. In the most recents months I
+both drove initiatives that increased revenue by millions, and
+implemented process improvements saving other companies
+up to 50 hours per month. I am deeply passionate about
+fostering collaboration and empowering others to make an
+impact, and working towards sustainable success.
+      `
     ),
   ];
 

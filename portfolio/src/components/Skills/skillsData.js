@@ -11,6 +11,7 @@ export const skills = [
       "Redux & Context",
       "React Native",
       "Developing npm packages",
+      "Docker"
     ],
   },
   {
@@ -20,11 +21,11 @@ export const skills = [
   {
     area: "Soft skills",
     skills: [
-      "Prioritizing & expectation management",
-      "Mentoring and sharing knowledge",
+      "Leading, managing & mentoring ",
+      "Positive & inclusive",
       "Managing stakeholders",
-      "Agile project management",
-      "Problem-solving",
+      "Prioritizing & expectation management",
+      "Strategic Thinking",
     ],
   },
   {

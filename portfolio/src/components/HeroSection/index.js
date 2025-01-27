@@ -17,7 +17,7 @@ export default function HeroSection() {
         <HeroContentContainer>
           <h1 className="heroSection__contentTitle">Vitaliy Steffensen</h1>
           <h3 className="heroSection__contentSubtitle">
-            <T>Front-end developer</T>
+            <T>Technical Lead</T>
           </h3>
           <span className="heroSection__contentParagraph">
             <T>with design & back-end experience</T>

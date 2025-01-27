@@ -10,8 +10,8 @@ const translate = (text) => {
       return "CV";
     case "I am":
       return "Jeg er";
-    case "Front-end developer":
-      return "Front-end udvikler";
+    case "Technical Lead":
+      return "Teknisk leder";
     case "with design & back-end experience":
       return "med design & back-end erfaring";
 
@@ -26,25 +26,45 @@ const translate = (text) => {
     case "Get in touch":
       return "Kom i kontakt";
 
-    case "As a developer":
-      return "Som en udvikler";
-    case "As a dedicated developer, I've built anything from video " +
-      "games to computer software. Now my passion lies in website " +
-      "development. I have been programming longer than I can remember " +
-      "and have always admired the startup and scale-up industry.":
+    case "With expertise":
+      return "Med ekspertise";
+    case `
+      With proven expertise in managing complex, cross-functional
+projects and streamlining processes, I have consistently
+delivered measurable results. In the most recents months I
+both drove initiatives that increased revenue by millions, and
+implemented process improvements saving other companies
+up to 50 hours per month. I am deeply passionate about
+fostering collaboration and empowering others to make an
+impact, and working towards sustainable success.
+      `:
       return (
-        "Som en dedikeret udvikler har jeg bygget alt fra video " +
-        "spil til computersoftware. Nu ligger min passion i web " +
-        "udvikling. Jeg har programmeret længere, end jeg kan huske" +
-        "og har altid beundret startup- og scale-up-industrien."
+        "Med dokumenteret ekspertise i at håndtere komplekse, tværfaglige projekter og optimere processer, har jeg konsekvent leveret målbare resultater. I de seneste måneder har jeg både drevet initiativer, der har øget omsætningen med millioner, og implementeret procesforbedringer, der har sparet andre virksomheder op til 50 timer om måneden. Jeg brænder dybt for at fremme samarbejde og give andre mulighed for at gøre en forskel, samtidig med at jeg arbejder hen imod bæredygtig succes."
       );
-
-    case "Programming teacher":
+    case "Tech Lead / Frontend developer": return "Tech Lead / Frontend developer"
+    case `With the freedom to shape projects beyond frontend development i effectively
+managed stakeholders and leveraged data insights to guide key product decisions,
+helping drive millions in revenue growth. 
+I led major initiatives in different teams including anything from making automation
+tools saving others time on a daily basis to taking charge of platform migration and
+architectural discussions. I have also spent time optimizing development processes and supporting developer
+interviews & integration. With a large cross country area i congruently optimize processes, enhance scalability,
+and supported developer interviews and integration.`:
+      return `Med friheden til at forme projekter ud over frontend-udvikling, har jeg effektivt håndteret interessenter og udnyttet dataindsigter til at styre vigtige produktbeslutninger, hvilket har bidraget til millioner i omsætningsvækst.
+Jeg har ledet større initiativer på tværs af forskellige teams, herunder alt fra at skabe automatiseringsværktøjer, der sparer andre tid dagligt, til at tage ansvar for platformmigration og arkitekturdrøftelser.
+Jeg har også brugt tid på at optimere udviklingsprocesser og støtte udviklerinterviews & integration.
+Med et stort tværgående geografisk område optimerer jeg konsekvent processer, forbedrer skalerbarhed og understøtter udviklerinterviews og integration.`
+    
+    case "Programming Instructor":
       return "Underviser i programmering";
     case "Today":
       return "Idag";
-    case "Taught programming to over 20 different students. My current team contains eight motivated students learning C#.":
-      return "Undervist i programmering til over 20 forskellige studerende. Mit nuværende hold indeholder otte motiverede elever, der lærer C#.";
+    case `Provided remote, one-on-one software development lessons through Superprof
+(2022), guiding students on diverse programming topics.
+Delivered hands-on C# and game development training at Coding Pirates  for teens
+(2019-2022).`:
+      return `Gav fjernundervisning i softwareudvikling én-til-én gennem Superprof (2022), hvor jeg vejledte studerende i forskellige programmeringsemner.
+Leverede praktisk C# og spiludviklingstræning hos Coding Pirates for teenagere (2019-2022).`
     case "March 2021":
       return "Marts 2021";
 
